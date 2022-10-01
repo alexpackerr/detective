@@ -10,14 +10,27 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 053561912b1654d80a424bb0696a74ae, type: 3}
   sourceScripts:
   - {fileID: 6391573757903218779, guid: 0fb93482c88f4d14fa679fba9ac6a129, type: 3}
+  - {fileID: 6391573757903218779, guid: ebe17f7b386fc774aa71752821dbc95e, type: 3}
   compileErrors: []
-  serializedDeclarations: []
+  serializedDeclarations:
+  - name: $TestStage
+    typeName: Number
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in test.yarn, node Start
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 0fb93482c88f4d14fa679fba9ac6a129, type: 3}
   defaultLanguage: en-US
   languagesToSourceAssets: []
   useAddressableAssets: 0
   searchAllAssembliesForActions: 1
   assembliesToSearch: []
   ListOfFunctions:
+  - Name: GetVar
+    ReturnType: -> Int32
+    Parameters:
+    - name
   - Name: Random
     ReturnType: -> Single
     Parameters: []
