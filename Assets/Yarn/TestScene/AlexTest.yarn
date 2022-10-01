@@ -1,0 +1,39 @@
+﻿title: Start
+tags:
+colorID: 0
+position: -100,-203
+---
+<<set $TestStage = GetVar("test")>>
+<<if $TestStage == 0>>
+	<<jump FirstConvo>>
+<<else>>
+	<<jump EndConvo>>
+<<endif>>
+===
+
+title: FirstConvo
+tags:
+colorID: 0
+position: -100,-203
+---
+Line1: Howdy! 
+Line2: What brings you around these parts?
+-> just passing through
+	Line3: *Asking a question*
+	-> yes
+		Line1a: You said yes
+	-> no
+		Line1b: You said no
+	<<SetVar GameManager "test" 1>>
+	<<jump EndConvo>>
+-> your mom
+	Line4: bro...
+===
+
+title: EndConvo
+tags:
+colorID: 0
+position: -100,-203
+---
+Line4: Come back any time!
+===
