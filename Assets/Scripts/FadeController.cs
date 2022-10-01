@@ -67,7 +67,7 @@ public class FadeController : MonoBehaviour
         }
 
     }
-
+    
     [YarnCommand("FadeOut")]
     public void FadeOut()
     {

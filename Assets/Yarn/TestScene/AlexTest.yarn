@@ -26,8 +26,11 @@ Line2: What brings you around these parts?
 		Line1b: You said no
 	<<SetVar GameManager "test" 1>>
 	<<jump EndConvo>>
--> your mom
+-> your mom		
+	<<SwitchEmote stick2 "sad">>
 	Line4: bro...
+	<<SwitchEmote stick2 "neutral">>
+	
 ===
 
 title: EndConvo
