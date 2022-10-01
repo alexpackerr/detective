@@ -1,0 +1,8 @@
+title: Start
+tags: 
+colorID: 0
+position: -100,-203
+---
+Test: "this is a flashback! Pretty cool, right?"
+<<ChangeScene GameManager "Test1">>
+===

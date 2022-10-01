@@ -1,0 +1,40 @@
+title: Start
+tags: 
+colorID: 0
+position: -100,-203
+---
+<<set $TestStage = GetVar("test")>>
+<<if $TestStage == 0>>
+	<<jump FirstConvo>>
+<<else>>
+	<<jump SecondConvo>>
+<<endif>>
+===
+
+title: FirstConvo
+tags: 
+colorID: 0
+position: -100,-203
+---
+Test: Hello!
+Test2: This is a test!
+-> ok
+    Test3: ok
+-> yes
+    Test3: ok
+Test4: anyway, flashback time...
+-> start flashback
+    Test5: Time to flashback!
+    <<SetVar GameManager "test" 1>>
+    <<ChangeScene GameManager "Test2">>
+-> don't start flashback
+    Test5: flashback cancelled
+===
+
+title: SecondConvo
+tags: 
+colorID: 0
+position: -100,-203
+---
+Test: This is the same scene as before, but now there's new dialog!
+===
