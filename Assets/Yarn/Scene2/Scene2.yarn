@@ -1,0 +1,52 @@
+﻿title: Start
+tags:
+---
+<<set $SceneTwo = GetVar("scene2")>>
+<<if $SceneTwo == 0>>
+	<<jump SceneTwo_1>>
+<<elseif $SceneTwo == 1>>
+	<<jump SceneTwo_2>>
+<<elseif $SceneTwo == 2>>
+	<<jump SceneTwo_3>>
+<<endif>>
+===
+
+title: SceneTwo_1
+tags:
+---
+You are currenly alone. Where do you wish to go?
+-> (the halls)
+	Marisa: Look, I can’t talk right now. There’s something going on at the school, and– what do you want? I’m not lost, I don’t need your help. 
+	-> Let's not fight. I think there’s something going on here at the school.
+		Marisa: What are you, some kind of detective? There’s nothing “going on” at the school, just some stupid drama over the prom. 
+		-> I’m just curious. Exciting, isn’t it?
+		Marisa: There’s nothing exciting about shoving yourself into another student’s business. Ugh, you Squamata High Schoolers are all so annoying.
+		-> Annoying enough to sabotage?
+		Marisa: I don’t even know how you dreamt that up. Look, your school’s not worth my time to “sabotage.”
+		<<SetVar GameManager "scene2" 1>>
+		<<ChangeScene GameManager "MarisaFlashback">>
+	-> Are you sure?
+	NEED TO ADD (WAITING ON WRITING)
+-> (to class)
+	Mr. Levi: I think this is the first time they’ve actually screwed up this badly. I know what you all are whispering about, back there. I’ve told them so many times before that there’s all kinds of bugs in the system, but they never listen. Maybe this time they will…
+	Mr. Levi: Oh, hey CHARACTERNAME. Believe it or not, you’re actually <i>not late</i> today! Class’s pretty excited about the “prom drama,” it seems. 
+	Mr. Levi: We can “chill” for a little bit. As long as you all promise, promise  to turn in the lab work by Sunday at 10 PM, we can have a relaxed class today. Promise? Ok. Good. 
+	-> Mr. Levi, you seem to know what’s going on.
+		Mr. Levi: Heh, you’re right! I do. Kind of. Admin sent out an email earlier. They said they think the poll’s been tampered with. It hasn’t been that long since I was in your shoes, in high school, you know. I’m sure one of you kids would definitely have been able to “tamper with” it. Here, why don’t we…
+		<<SetVar GameManager "scene2" 2>>
+		<<ChangeScene GameManager "MrLeviFlashback">>
+	-> I'm not promising anything. 
+===
+
+title: SceneTwo_2
+tags:
+---
+Marisa: …I think I’m going home. 
+
+===
+
+title: SceneTwo_3
+tags: 
+---
+Mr. Levi: You know what? Class dismissed. Good luck out there, kids. 
+===
