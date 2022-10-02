@@ -12,6 +12,7 @@ Anonymous: Deal?
 <<StartTalk Samuel>>
 Samuel: ...no.
 <<StopTalk Samuel>>
+<<FadeOut Samuel>>
 <<ChangeScene GameManager "Intro">>
 
 ===

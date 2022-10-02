@@ -18,18 +18,18 @@ public class FadeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E))
-        {
-            fadeIn = true;
-        }
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            fadeOut = true;
-        }
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            talking = !talking;
-        }
+        //if(Input.GetKeyDown(KeyCode.E))
+        //{
+        //    fadeIn = true;
+        //}
+        //if (Input.GetKeyDown(KeyCode.R))
+        //{
+        //    fadeOut = true;
+        //}
+        //if (Input.GetKeyDown(KeyCode.Q))
+        //{
+        //    talking = !talking;
+        //}
 
         if (fadeOut)
         {

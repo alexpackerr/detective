@@ -65,6 +65,9 @@ title: IntroPtThree
 tags:
 ---
 <<StopTalk Samuel>>
+<<wait 1>>
+<<FadeIn Samuel>>
+Samuel: ...
 CHARACTERNAME: Hey, you alright there?
 <<StartTalk Samuel>>
 Samuel: I’m fine. Just remembered something for a second that I wanted to forget. See ya.
