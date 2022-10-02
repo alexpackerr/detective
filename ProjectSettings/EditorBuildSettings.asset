@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Test/Test2.unity
     guid: ca0146399cc02ea4abae795887cd4f7f
+  - enabled: 1
+    path: Assets/Scenes/Intro/Intro.unity
+    guid: f80c91c7b4a88d148b452d914ba606a6
+  - enabled: 1
+    path: Assets/Scenes/Intro/BrentFlashback_1.unity
+    guid: 14aa6ad41b7be0747b83ebf9a7acf503
+  - enabled: 1
+    path: Assets/Scenes/Intro/SamuelFlashback_1.unity
+    guid: 3144ea1a32552824fade4205c7701d89
   m_configObjects: {}

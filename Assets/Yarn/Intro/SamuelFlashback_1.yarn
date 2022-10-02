@@ -1,0 +1,17 @@
+﻿title: Start
+tags:
+---
+<<FadeIn Samuel>>
+<<StopTalk Samuel>>
+Anonymous: Hey Samuel, you’re good with computers, right??
+Anonymous: Mind helping me out with some… schoolwork?
+Anonymous: I mean, technically, it’s related to school.
+Anonymous: I’ll make it worth your while. Just let me know what you want. 
+Anonymous: Just make me an admin or whatever you need so I can change some stuff up
+Anonymous: Deal?
+<<StartTalk Samuel>>
+Samuel: ...no.
+<<StopTalk Samuel>>
+<<ChangeScene GameManager "Intro">>
+
+===

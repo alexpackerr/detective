@@ -1,6 +1,19 @@
 ﻿title: Start
 tags:
 ---
+<<set $IntroStage = GetVar("intro")>>
+<<if $IntroStage == 0>>
+	<<jump IntroPtOne>>
+<<elseif $IntroStage == 1>>
+	<<jump IntroPtTwo>>
+<<elseif $IntroStage == 2>>
+	<<jump IntroPtThree>>
+<<endif>>
+===
+
+title: IntroPtOne
+tags:
+---
 Announcement: ATTENTION STUDENTS: DUE TO THE HIGHLY UNEXPECTED OUTCOME OF THIS YEAR’S PROM COURT ELECTION POLL, WE ARE UNABLE TO DETERMINE THE WINNER OF THE PROM QUEEN TITLE. PLEASE RETURN TO YOUR CLASSES, ADDITIONAL INFORMATION WILL BE AVAILABLE SHORTLY. 
 
 Students: Have you heard–?
@@ -8,12 +21,53 @@ Students: What?
 Students: LOOK, LOOK HERE!
 Students: SAMANTHA!
 
+<<StartTalk Samuel>>
 <<wait 2>>
 
+<<FadeIn Samuel>>
 Samuel: CHARACTERNAME, we should go… who knows what could happen here. People are angry. 
+<<StopTalk Samuel>>
 -> (Stay) 
 	CHARACTERNAME: You can go, Samuel. I think I’ll poke around this mess a little. Isn’t it time something happened around here?
+	<<FadeOut Samuel>>
+	Brent: Oh, hey CHARACTERNAME! You seen Samantha around here? I've been trying to get a hold of her, but she isn't picking up. 
+	Brent: Weird, huh? Y’know, with her being like, a candidate for prom queen, and all.
+	-> Haven't seen her. 
+		Brent: Oh… I see. She’s been acting weird lately. I–
+		<<SetVar GameManager "intro" 1>>
+		<<ChangeScene GameManager "BrentFlashback_1">>
+	-> Never mind that. Do you know what's going on here?
+		Brent: Couldn’t tell you. One of the guys said he thinks something’s wrong with the system. Someone must’ve messed something up somewhere. Just worried about Sam though. Can’t talk much longer now, I gotta find her!
 -> (Leave)
 	CHARACTERNAME: You’re right. Say, you got any idea what happened? <i> You’re smart.</i> What the hell could possibly go wrong with the prom court voting. Whatcha think? 
+	<<StartTalk Samuel>>
+	Samuel: Could’ve been anything with our shitty school websites. If I had to guess, I’d say someone messed with 'em. Some sort of senior prank or something? 
+	<<StopTalk Samuel>>
+	-> Hm, could be. 
+	-> I like the way you think. Something’s definitely up here.	
+		<<StartTalk Samuel>>
+		Samuel: I wouldn’t go that far. I’m sure the school will figure it out. Eventually. Let’s just get back to class. 
+		<<SetVar GameManager "intro" 2>>
+		<<ChangeScene GameManager "SamuelFlashback_1">>
+	
 
+
+===
+
+title: IntroPtTwo
+tags:
+---
+Brent: Sorry, what was I saying? Oogh, I feel kinda weird. Thanks anyway, CHARACTERNAME. I’ll keep looking.
+
+===
+
+title: IntroPtThree
+tags:
+---
+<<StopTalk Samuel>>
+CHARACTERNAME: Hey, you alright there?
+<<StartTalk Samuel>>
+Samuel: I’m fine. Just remembered something for a second that I wanted to forget. See ya.
+<<FadeOut Samuel>>
+CHARACTERNAME: <i> Something’s definitely up. Wonder if anyone else knows anything. </i>
 ===
