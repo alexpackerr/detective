@@ -1,0 +1,19 @@
+﻿title: Start
+tags:
+---
+Announcement: ATTENTION STUDENTS: DUE TO THE HIGHLY UNEXPECTED OUTCOME OF THIS YEAR’S PROM COURT ELECTION POLL, WE ARE UNABLE TO DETERMINE THE WINNER OF THE PROM QUEEN TITLE. PLEASE RETURN TO YOUR CLASSES, ADDITIONAL INFORMATION WILL BE AVAILABLE SHORTLY. 
+
+Students: Have you heard–?
+Students: What?
+Students: LOOK, LOOK HERE!
+Students: SAMANTHA!
+
+<<wait 2>>
+
+Samuel: CHARACTERNAME, we should go… who knows what could happen here. People are angry. 
+-> (Stay)
+	CHARACTERNAME: You can go, Samuel. I think I’ll poke around this mess a little. Isn’t it time something happened around here?
+-> (Leave)
+	CHARACTERNAME: You’re right. Say, you got any idea what happened? You’re smart. What the hell could possibly go wrong with the prom court voting. Whatcha think? 
+
+===
