@@ -1,4 +1,4 @@
-﻿title: NewYarnScript
+﻿title: Start
 tags:
 ---
 <<set $TestStage = GetVar("Scene4")>>
@@ -43,4 +43,59 @@ tags:
 ---
 <b> RIIIIIIIIIING! </b>
 <i> That's the bell, I'd better head to class </i>
+===
+
+title: Samuel
+tags:
+---
+<i> Scouring the courtyard, you can't find Samuel anywhere. Thankfully, you have their number. </i>
+CHARACTERNAME: Hey, where are you? 
+Samuel: Still in the classroom. Don’t feel like talking much, I guess. You can come if you need to, though. 
+<<ChangeScene GameManager "Scene4Samuel">>
+===
+
+
+title: Samuel2
+tags:
+---
+<<set $CheckSam = GetVar("CheckSam4")>>
+<<if $CheckSam == 1>>
+	<<jump Samuel3>>
+<<endif>>
+Samuel: I can’t believe it. So many people have been bothering me today. Why? Just because I won the engineering challenge once? That doesn’t even have anything to do with “hacking” or anything they’re talking about? 
+
+-> People bothering you about that kind of thing again?	
+	Samuel:  Again? What do you mean again? This is new. This isn’t just people asking for help on homework, CHARACTERNAME
+	Samuel: You know, this isn’t helping. Leave me alone.
+	<<ChangeScene GameManager "Scene4main">>
+-> Sorry to hear about that. 
+	Samuel: Heh, thanks. I know this might be exciting to you, but it makes me nervous. People are being… weird, now that it feels like the year’s almost over. 
+	<<ChangeScene GameManager "Scene4SamuelFlashback">>
+===
+
+title: SamuelFlashback
+tags:
+---
+Anonymous Messenger: I know you know who I am. 
+
+Anonymous Messenger: The Prom court voting, I need it changed. 
+
+Anonymous Messenger: You have no idea how much this means.
+
+Anonymous Messenger: I just can’t at the end of the year. 
+
+Anonymous Messenger: It's getting too big, I just want to spend the end of the year… calmly. 
+
+Samuel: <i> Typing </i>
+<<SetVar GameManager "CheckSam4" 1>>
+<<ChangeScene GameManager "Scene4Samuel">>
+===
+
+title: Samuel3
+tags:
+---
+CHARACTERNAME: You know, the faster they figure this out, the faster everyone will get off your back. 
+Samuel: I guess you’re right…
+CHARACTERNAME: You know, I’ve gotten some ideas about this whole situation. I’m sure it’ll get cleared up soon.
+<<jump Start>>
 ===
