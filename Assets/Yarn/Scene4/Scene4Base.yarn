@@ -1,0 +1,46 @@
+﻿title: NewYarnScript
+tags:
+---
+<<set $TestStage = GetVar("Scene4")>>
+<<if $TestStage < 2>>
+	<<jump TalkChoice>>
+<<else>>
+	<<jump EndScene>>
+<<endif>>
+===
+
+title: TalkChoice
+tags:
+---
+
+<i> It's lunchtime...I have some time to talk to people, who should I choose? </i> <<if $TestStage  == 0>>
+<<set $TestStage = $TestStage + 1>>
+<<SetVar GameManager "Scene4" $TestStage>>
+<<set $TestSamuel = GetVar("Samuel4")>>
+<<set $TestBrent = GetVar("Brent4")>>
+<<set $TestMarissa = GetVar("Marissa4")>>
+<<set $TestLevi = GetVar("Levi4")>>
+<<set $TestTaylor = GetVar("Taylor4")>>
+-> Talk with Samuel? <<if $TestSamuel == 0>>
+	<<SetVar GameManager "Samuel4" 1>>
+	<<jump Samuel>>
+-> Talk with Brent? <<if $TestBrent == 0>>
+	<<SetVar GameManager "Brent4" 1>>
+	<<jump Brent>>
+-> Talk with Marissa? <<if $TestMarissa == 0>>
+	<<SetVar GameManager "Marissa4" 1>>
+	<<jump Marissa>>
+-> Talk with Mr.Levi? <<if $TestLevi == 0>>
+	<<SetVar GameManager "Levi4" 1>>
+	<<jump Levi>>
+-> Talk with Taylor? <<if $TestTaylor == 0>>
+	<<SetVar GameManager "Taylor4" 1>>
+	<<jump Taylor>>
+===
+
+title: EndScene
+tags:
+---
+<b> RIIIIIIIIIING! </b>
+<i> That's the bell, I'd better head to class </i>
+===
