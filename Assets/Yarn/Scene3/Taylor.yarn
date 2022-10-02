@@ -1,0 +1,35 @@
+﻿title: Start
+tags:
+---
+<<set $TestStage = GetVar("Scene3")>>
+<<if $TestStage == 1>>
+	<<jump Taylor2>>
+<<endif>>
+Taylor: Yo! CHARACTERNAME! My favorite little Junior! What’s up?
+
+CHARACTERNAME: Hey, Taylor. Just investigating a little, I suppose. Yknow, I think I might know the whole Prom drama stories better than any of the staff. 
+
+Taylor: Go you! That’s epic. I think you can do anything you set your mind to.  Us, we’re just living life. Won’t be long till the end of the year, the least we can do is make some memories now, prom or no prom. 
+
+CHARACTERNAME: Did you hear anything suspicious while you were out “living life?” 
+
+Taylor: My, my, very dedicated! No, I don’t suppose any of us really know anything. Right, guys?
+
+Band Kids: Nope! 
+Band Kids: Some drama!
+Band Kids: <i> Saxophone Solo </i>
+
+Taylor: Anyways, we were off to the field. Maya and the Jazz people are gonna put on a little show. Feel free to join us–
+<<SetVar GameManager "Scene3" 1>>
+<<ChangeScene GameManager "Scene3Flashback">>
+===
+
+title: Taylor2
+tags:
+---
+Band Kid: Taylor, are you alright? You kind of spaced out for a second...or ten. 
+
+Taylor:
+I’m fine. Probably just excited for you guys. See you later, CHARACTERNAME!
+
+===
