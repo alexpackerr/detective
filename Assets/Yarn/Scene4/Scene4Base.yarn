@@ -2,7 +2,8 @@
 tags:
 ---
 <<set $TestStage = GetVar("Scene4")>>
-<<if $TestStage < 2>>
+<<set $TestStage2 = GetVar("Scene4-2")>>
+<<if $TestStage2 == 0>>
 	<<jump TalkChoice>>
 <<else>>
 	<<jump EndScene>>
@@ -12,10 +13,12 @@ tags:
 title: TalkChoice
 tags:
 ---
-
-<i> It's lunchtime...I have some time to talk to people, who should I choose? </i> <<if $TestStage  == 0>>
-<<set $TestStage = $TestStage + 1>>
-<<SetVar GameManager "Scene4" $TestStage>>
+<<if $TestStage  == 0>>
+<i> It's lunchtime...I have some time to talk to people, who should I choose? </i>
+<<SetVar GameManager "Scene4" 1>>
+<<else>>
+<<SetVar GameManager "Scene4-2" 1>>
+<<endif>>
 <<set $TestSamuel = GetVar("Samuel4")>>
 <<set $TestBrent = GetVar("Brent4")>>
 <<set $TestMarissa = GetVar("Marissa4")>>
@@ -98,4 +101,42 @@ CHARACTERNAME: You know, the faster they figure this out, the faster everyone wi
 Samuel: I guess you’re right…
 CHARACTERNAME: You know, I’ve gotten some ideas about this whole situation. I’m sure it’ll get cleared up soon.
 <<jump Start>>
+===
+
+
+title: Brent1
+tags:
+---
+<<set $TalkedToBrent = GetVar("BrentIntro")>>
+<<if $TalkedToBrent == 1>>
+Brent: Oh! CHARACTERNAME! I found her! Took a little while, though.
+<<else>>
+Brent: Hey, CHARACTERNAME. What’s up?
+Brent: You been alright? Today’s been pretty intense. All this drama over the prom queens, and Samantha wasn’t even there! I only  just found her now. 
+<<endif>>
+ 
+-> How is Samantha, actually?
+	Brent: Oh! I found her with some of the other girls. Seemed like she was just waiting to make a dramatic entrance or something. I’m sure she’s fine. Probably just annoyed about it all. But what do I know?
+
+Brent Was nice to see you again, [Player]. You should join us at the prom! Toss some balls around. It’ll be a good time, I’m sure. 
+
+-> You know, what do you think about all the drama?
+
+
+===
+
+
+title: a
+tags:
+---
+===
+
+title: b
+tags:
+---
+===
+
+title: c
+tags:
+---
 ===

@@ -30,6 +30,7 @@ Samuel: CHARACTERNAME, we should go… who knows what could happen here. People 
 -> (Stay) 
 	CHARACTERNAME: You can go, Samuel. I think I’ll poke around this mess a little. Isn’t it time something happened around here?
 	<<FadeOut Samuel>>
+	<<SetVar GameManager "BrentIntro" 1>>
 	Brent: Oh, hey CHARACTERNAME! You seen Samantha around here? I've been trying to get a hold of her, but she isn't picking up. 
 	Brent: Weird, huh? Y’know, with her being like, a candidate for prom queen, and all.
 	-> Haven't seen her. 
