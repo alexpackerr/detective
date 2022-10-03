@@ -52,12 +52,18 @@ You are currenly alone. Where do you wish to go?
 title: SceneTwo_class
 tags:
 ---
+<<StartTalk Levi>>
+<<wait 1>>
+
+<<FadeIn Levi>>
 Mr. Levi: I think this is the first time they’ve actually screwed up this badly. I know what you all are whispering about, back there.
 Mr. Levi: I’ve told them so many times before that there’s all kinds of bugs in the system, but they never listen. Maybe this time they will…
 Mr. Levi: Oh, hey Zach. Believe it or not, you’re actually <i>not late</i> today! Class’s pretty excited about the “prom drama,” it seems. 
 Mr. Levi: We can “chill” for a little bit. As long as you all promise, promise  to turn in the lab work by Sunday at 10 PM, we can have a relaxed class today. 
 Mr. Levi: Promise? Ok. Good. 
+<<StopTalk Levi>>
 -> Mr. Levi, you seem to know what’s going on.
+	<<StartTalk Levi>>
 	Mr. Levi: Heh, you’re right! I do. Kind of. Admin sent out an email earlier. They said they think the poll’s been tampered with. 
 	Mr. Levi: It hasn’t been that long since I was in your shoes, in high school, you know. I’m sure one of you kids would definitely have been able to “tamper with” it. Here, why don’t we…
 	<<SetVar GameManager "scene2" 2>>
@@ -76,5 +82,6 @@ Marissa: …I think I’m going home.
 title: SceneTwo_3
 tags: 
 ---
+<<StartTalk Levi>>
 Mr. Levi: You know what? Class dismissed. Good luck out there, kids. 
 ===
