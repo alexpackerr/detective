@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene6/SamuelAccused.unity
     guid: e8de7e2b42f51844bb40339f305960e2
   - enabled: 1
+    path: Assets/Scenes/Scene2/Scene2Class.unity
+    guid: a64fe9150d922464dbfb6c800322f19b
+  - enabled: 1
     path: Assets/Scenes/Scene4/Scene4MarissaFlashback.unity
     guid: 97ba8ebe18ba8de4fb88db57ee816495
   - enabled: 1

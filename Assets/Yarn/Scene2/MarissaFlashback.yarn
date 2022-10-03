@@ -1,15 +1,28 @@
 ﻿title: Start
 tags:
 ---
-<i> I can’t believe you’re leaving this Sunday. </i>
-Marissa: I can hardly believe it myself. I’ll miss you guys. 
-<i> And you’re going to Squamata? That school is ass compared to here. </i>
+<<StartTalk Unknown>>
+<<FadeIn Unknown>>
+<<FadeIn Marissa>>
+???: I can’t believe you’re leaving this Sunday.
+<<StopTalk Unknown>>
+<<StartTalk Marissa>>
+Marissa: I can hardly believe it myself. I’ll miss you guys.
+<<StopTalk Marissa>> 
+<<StartTalk Unknown>>
+???: And you’re going to Squamata? That school is ass compared to here.
+<<StopTalk Unknown>>
+<<StartTalk Marissa>>
 Marissa: Haven’t even been able to find information about class schedules or anything. The website’s all just rambling about the prom. 
 Marissa: Look, sometimes I can even edit the text boxes. I don’t think you’re supposed to be able to do that. 
-<i> Ha! Wait, let me take a look. </i>
+<<StopTalk Marissa>> 
+<<StartTalk Unknown>>
+???: Ha! Wait, let me take a look.
+<<StopTalk Unknown>>
+<<StartTalk Marissa>>
 Marissa: What if we…
-
-<<wait 1>>
+<<FadeOut Marissa>>
+<<FadeOut Unknown>>
 
 <<ChangeScene GameManager "Scene2">>
 ===

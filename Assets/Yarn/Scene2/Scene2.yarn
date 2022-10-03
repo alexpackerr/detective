@@ -18,11 +18,10 @@ You are currenly alone. Where do you wish to go?
 -> (the halls)
 	<<StartTalk Marissa>>
 	<<wait 1>>
-
 	<<FadeIn Marissa>>
-	<<SetVar GameManager "MarissaMet" 1>>
 	Marissa: Look, I can’t talk right now. There’s something going on at the school, and– what do you want? I’m not lost, I don’t need your help. 
 	<<StopTalk Marissa>>
+	<<SetVar GameManager "MarissaMet" 1>>
 	-> Let's not fight. I think there’s something going on here at the school.
 		<<StartTalk Marissa>>
 		Marissa: What are you, some kind of detective? There’s nothing “going on” at the school, just some stupid drama over the prom. 
@@ -52,14 +51,23 @@ You are currenly alone. Where do you wish to go?
 title: SceneTwo_class
 tags:
 ---
+<<StartTalk Levi>>
+<<FadeIn Levi>>
+<<set $SceneTwo = GetVar("scene2")>>
+<<if $SceneTwo == 2>>
+	<<jump SceneTwo_3>>
+<<endif>>
 Mr. Levi: I think this is the first time they’ve actually screwed up this badly. I know what you all are whispering about, back there.
 Mr. Levi: I’ve told them so many times before that there’s all kinds of bugs in the system, but they never listen. Maybe this time they will…
 Mr. Levi: Oh, hey Zach. Believe it or not, you’re actually <i>not late</i> today! Class’s pretty excited about the “prom drama,” it seems. 
 Mr. Levi: We can “chill” for a little bit. As long as you all promise, promise  to turn in the lab work by Sunday at 10 PM, we can have a relaxed class today. 
 Mr. Levi: Promise? Ok. Good. 
+<<StopTalk Levi>>
 -> Mr. Levi, you seem to know what’s going on.
+	<<StartTalk Levi>>
 	Mr. Levi: Heh, you’re right! I do. Kind of. Admin sent out an email earlier. They said they think the poll’s been tampered with. 
 	Mr. Levi: It hasn’t been that long since I was in your shoes, in high school, you know. I’m sure one of you kids would definitely have been able to “tamper with” it. Here, why don’t we…
+	<<FadeOut Levi>>
 	<<SetVar GameManager "scene2" 2>>
 	<<ChangeScene GameManager "MrLeviFlashback">>
 -> I'm not promising anything. 
@@ -69,12 +77,20 @@ Mr. Levi: Promise? Ok. Good.
 title: SceneTwo_2
 tags:
 ---
-Marissa: …I think I’m going home. 
+<<StartTalk Marissa>>
+<<FadeIn Marissa>>
+Marissa: …I think I’m going home.
+<<FadeOut Marissa>>
+<<ChangeScene GameManager "Scene3">>
 
 ===
 
 title: SceneTwo_3
 tags: 
 ---
+<<StartTalk Levi>>
+<<FadeIn Levi>>
 Mr. Levi: You know what? Class dismissed. Good luck out there, kids. 
+<<FadeOut Levi>>
+<<ChangeScene GameManager "Scene3">>
 ===
