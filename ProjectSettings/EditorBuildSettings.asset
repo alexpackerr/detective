@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Intro/Title.unity
+    guid: 0cc9914d2c921ca43a697d2b530cae69
+  - enabled: 1
     path: Assets/Scenes/Intro/Intro.unity
     guid: f80c91c7b4a88d148b452d914ba606a6
   - enabled: 1
@@ -50,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene2/MrLeviFlashback.unity
     guid: c3190af3e4ff3e44bb4364c1a30de277
+  - enabled: 1
+    path: Assets/Scenes/Intro/Samuel.unity
+    guid: ad158bc120aeeba45a2051398f7cd7c1
   m_configObjects: {}
