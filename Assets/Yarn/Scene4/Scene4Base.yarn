@@ -26,6 +26,7 @@ tags:
 ---
 <<if $TestStage  == 0>>
 <i> It's lunchtime...I have some time to talk to people, who should I choose? </i>
+
 <<SetVar GameManager "Scene4" 1>>
 <<else>>
 <i> Lunch is about halfway over, I think I can talk with someone else before the bell </i>
@@ -65,7 +66,7 @@ tags:
 ---
 <<FadeIn Samuel>>
 <i> Scouring the courtyard, you can't find Samuel anywhere. Thankfully, you have their number. </i>
--> Hey, where are you? 
+<i> Hey, where are you? </i>
 <<StartTalk Samuel>>
 Samuel: Still in the classroom. Don’t feel like talking much, I guess. You can come if you need to, though. 
 <<FadeOut Samuel>>
