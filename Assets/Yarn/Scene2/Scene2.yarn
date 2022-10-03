@@ -16,6 +16,7 @@ tags:
 ---
 You are currenly alone. Where do you wish to go?
 -> (the halls)
+	<<SetVar GameManager "MarissaMet" 1>>
 	Marisa: Look, I can’t talk right now. There’s something going on at the school, and– what do you want? I’m not lost, I don’t need your help. 
 	-> Let's not fight. I think there’s something going on here at the school.
 		Marisa: What are you, some kind of detective? There’s nothing “going on” at the school, just some stupid drama over the prom. 
@@ -28,6 +29,7 @@ You are currenly alone. Where do you wish to go?
 	-> Are you sure?
 	NEED TO ADD (WAITING ON WRITING)
 -> (to class)
+	<<SetVar GameManager "LeviMet" 1>>
 	Mr. Levi: I think this is the first time they’ve actually screwed up this badly. I know what you all are whispering about, back there. I’ve told them so many times before that there’s all kinds of bugs in the system, but they never listen. Maybe this time they will…
 	Mr. Levi: Oh, hey CHARACTERNAME. Believe it or not, you’re actually <i>not late</i> today! Class’s pretty excited about the “prom drama,” it seems. 
 	Mr. Levi: We can “chill” for a little bit. As long as you all promise, promise  to turn in the lab work by Sunday at 10 PM, we can have a relaxed class today. Promise? Ok. Good. 

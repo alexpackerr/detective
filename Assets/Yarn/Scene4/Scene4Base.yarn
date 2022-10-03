@@ -1,6 +1,17 @@
 ﻿title: Start
 tags:
 ---
+
+<<set $Check = GetVar("CheckBrent4")>>
+<<if $Check == 1>>
+	<<jump Brent2>>
+<<endif>>
+
+<<set $Check = GetVar("CheckMarissa4")>>
+<<if $Check == 1>>
+	<<jump Marissa2>>
+<<endif>>
+
 <<set $TestStage = GetVar("Scene4")>>
 <<set $TestStage2 = GetVar("Scene4-2")>>
 <<if $TestStage2 == 0>>
@@ -29,10 +40,10 @@ tags:
 	<<jump Samuel>>
 -> Talk with Brent? <<if $TestBrent == 0>>
 	<<SetVar GameManager "Brent4" 1>>
-	<<jump Brent>>
+	<<jump Brent1>>
 -> Talk with Marissa? <<if $TestMarissa == 0>>
 	<<SetVar GameManager "Marissa4" 1>>
-	<<jump Marissa>>
+	<<jump Marissa1>>
 -> Talk with Mr.Levi? <<if $TestLevi == 0>>
 	<<SetVar GameManager "Levi4" 1>>
 	<<jump Levi>>
@@ -61,8 +72,8 @@ Samuel: Still in the classroom. Don’t feel like talking much, I guess. You can
 title: Samuel2
 tags:
 ---
-<<set $CheckSam = GetVar("CheckSam4")>>
-<<if $CheckSam == 1>>
+<<set $Check = GetVar("CheckSam4")>>
+<<if $Check == 1>>
 	<<jump Samuel3>>
 <<endif>>
 Samuel: I can’t believe it. So many people have been bothering me today. Why? Just because I won the engineering challenge once? That doesn’t even have anything to do with “hacking” or anything they’re talking about? 
@@ -70,7 +81,7 @@ Samuel: I can’t believe it. So many people have been bothering me today. Why? 
 -> People bothering you about that kind of thing again?	
 	Samuel:  Again? What do you mean again? This is new. This isn’t just people asking for help on homework, CHARACTERNAME
 	Samuel: You know, this isn’t helping. Leave me alone.
-	<<ChangeScene GameManager "Scene4main">>
+	<<ChangeScene GameManager "Scene4Main">>
 -> Sorry to hear about that. 
 	Samuel: Heh, thanks. I know this might be exciting to you, but it makes me nervous. People are being… weird, now that it feels like the year’s almost over. 
 	<<ChangeScene GameManager "Scene4SamuelFlashback">>
@@ -97,10 +108,10 @@ Samuel: <i> Typing </i>
 title: Samuel3
 tags:
 ---
-CHARACTERNAME: You know, the faster they figure this out, the faster everyone will get off your back. 
+Zach: You know, the faster they figure this out, the faster everyone will get off your back. 
 Samuel: I guess you’re right…
-CHARACTERNAME: You know, I’ve gotten some ideas about this whole situation. I’m sure it’ll get cleared up soon.
-<<jump Start>>
+Zach: You know, I’ve gotten some ideas about this whole situation. I’m sure it’ll get cleared up soon.
+<<ChangeScene GameManager "Scene4Main">>
 ===
 
 
@@ -109,34 +120,104 @@ tags:
 ---
 <<set $TalkedToBrent = GetVar("BrentIntro")>>
 <<if $TalkedToBrent == 1>>
-Brent: Oh! CHARACTERNAME! I found her! Took a little while, though.
+Brent: Oh! Zach! I found her! Took a little while, though.
 <<else>>
-Brent: Hey, CHARACTERNAME. What’s up?
+Brent: Hey, Zach. What’s up?
 Brent: You been alright? Today’s been pretty intense. All this drama over the prom queens, and Samantha wasn’t even there! I only  just found her now. 
 <<endif>>
  
 -> How is Samantha, actually?
 	Brent: Oh! I found her with some of the other girls. Seemed like she was just waiting to make a dramatic entrance or something. I’m sure she’s fine. Probably just annoyed about it all. But what do I know?
-
-Brent Was nice to see you again, [Player]. You should join us at the prom! Toss some balls around. It’ll be a good time, I’m sure. 
-
+	Brent: Was nice to see you again, Zach. You should join us at the prom! Toss some balls around. It’ll be a good time, I’m sure. 
+	<<jump Start>>
 -> You know, what do you think about all the drama?
-
-
+	Brent: I’m sure it was just a glitch or something. Poor Sam. I’m sure all this drama must be a lot for her. You know, the other day, we were just–
+	<<ChangeScene GameManager "Scene4BrentFlashback">>
 ===
 
 
-title: a
+title: BrentFlashback
+tags:
+---
+Brent: It’s Tomorrow, Sam, it’s tomorrow! Can you believe it?
+
+Samantha: I know. The group chat’s been going wild. I can’t believe it. 
+
+Brent: You’re the clear winner, of course. No one else stands a chance against you. 
+
+Samantha: Hah! Thanks, Brent. Once this is all over, I’m sure we’ll sweep the end of the year. 
+
+Brent: Wait, sorry, when it’s over? Is something up?
+
+<<SetVar GameManager "CheckBrent4" 1>>
+<<ChangeScene GameManager "Scene4Main">>
+===
+
+title: Brent2
+tags:
+---
+Brent: Sometimes, it doesn’t even seem like… oh well. We’ll see tonight. She’ll be the queen tonight, I’m sure. Feel free to join us! We should get a ball game going during the party.
+<<jump Start>>	
+
+===
+
+title: Marissa1
+tags:
+---
+<<set $TalkedToMarissa = GetVar("MarissaMet")>>
+<<if $TalkedToMarissa == 1>>
+	Marissa: Ugh, you again. 
+	Zach: Is there anything you’re not telling me?
+<<else>>
+	Marissa: Um, who are you? 
+	Zach: Meeting new people, like yourself. I happen to be pretty curious about the incident and you seem like the kind of person who might have caught something more.
+<<endif>>
+
+Marissa: What, just because I’m new? Get out of here.. I’m not even going to your prom. I couldn’t care less about what happens there. 
+
+
+
+-> Why? Don’t you want to be a part of the school?
+	Marissa: Hell no. I might be new here, but I don’t need to go to your guys’s party.
+	<<jump Marissa2>>
+->  Staying out of the Drama, I see. 
+	Marissa: You seem to love the drama. Seem fixated on it. I don’t know why you’re coming to me about it. Look, if I had anything for you, I’d have given it to you already. 
+	<<ChangeScene GameManager "Scene4MarissaFlashback">>
+
+===
+
+title: MarissaFlashback
+tags:
+---
+???: Look, there’s all sort of announcements about the prom royalty too. Seems like a pretty big deal at their– I guess your school. 
+
+Marissa: Ugh, I don’t know anything about these girls, but from the pictures they all seem pretty stuck-up. 
+
+???: You can vote for em too. Look, they’re collecting emails and everything. Seems like they want their prom to be pretty “secure.” 
+
+Marissa: Guess they’ll have to see about that. Bet someone could have some fun with the system. 
+
+<<SetVar GameManager "CheckMarissa4" 1>>
+<<ChangeScene GameManager "Scene4MarissaMain">>
+
+===
+
+title: Marissa2
+tags:
+---
+
+Zach: I see. 
+Marissa: What are you going on about now? Go interrogate someone else. 
+<<jump Start>>
+
+===
+
+title: d
 tags:
 ---
 ===
 
-title: b
-tags:
----
-===
-
-title: c
+title: e
 tags:
 ---
 ===
