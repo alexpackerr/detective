@@ -28,6 +28,7 @@ tags:
 <i> It's lunchtime...I have some time to talk to people, who should I choose? </i>
 <<SetVar GameManager "Scene4" 1>>
 <<else>>
+<i> Lunch is about halfway over, I think I can talk with someone else before the bell </i>
 <<SetVar GameManager "Scene4-2" 1>>
 <<endif>>
 <<set $TestSamuel = GetVar("Samuel4")>>
@@ -46,7 +47,7 @@ tags:
 	<<jump Marissa1>>
 -> Talk with Mr.Levi? <<if $TestLevi == 0>>
 	<<SetVar GameManager "Levi4" 1>>
-	<<jump Levi>>
+	<<jump Levi1>>
 -> Talk with Taylor? <<if $TestTaylor == 0>>
 	<<SetVar GameManager "Taylor4" 1>>
 	<<jump Taylor>>
@@ -212,12 +213,42 @@ Marissa: What are you going on about now? Go interrogate someone else.
 
 ===
 
-title: d
+title: Levi1
 tags:
 ---
+Zach: Mr.Levi, what’s going on? You’re not leaving, are you?
+
+Mr.Levi: Ha, I’m afraid so. Got a better offer somewhere else. Heard they treat their teachers right there. 
+
+Mr.Levi: It’ll be a shame to leave you kids behind, though. Incredible to see what you all can do, when you put your minds to it. 
+
+Mr.Levi: Its time for me to go, though. Sometimes I wish I could leave the school a little “parting gift.” 
+
+Zach: You didn’t have anything to do with this?
+
+Mr.Levi: Look, what students do with the tools I give them is none of my business. Even if I show em some ways you can play with the school’s websites and servers. 
+
+Mr.Levi: Be good out there!
+
+<<jump Start>>
+
 ===
 
-title: e
+title: Taylor1
 tags:
 ---
+Taylor: Hey Zach! Heard you wanted to meet up? Maybe chat a little before I head out? I approve. 
+
+Zach: Sorry Taylor, I’m still working out this whole prom story. 
+
+Taylor: Alright! I’ve heard a little more since this morning’s little fiasco. I wouldn’t be surprised if it was a teacher or something. Someone unhappy enough with the way the school’s going to want to give the school a little surprise.
+
+Zach: Thanks, Taylor. You sure it wasn’t anyone in the band?
+
+Taylor: Look, we’re not doing anything that could risk us getting our Spring Concert cancelled. Especially me. Its my last hurrah.
+
+Zach: Interesting. 
+
+Taylor: Keep up the work, little detective! You’ve got this. 
+<<jump Start>>
 ===
