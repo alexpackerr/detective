@@ -46,7 +46,14 @@ Samuel: Zach, we should go… who knows what could happen here. People are angry
 		Brent: Couldn’t tell you. One of the guys said he thinks something’s wrong with the system. Someone must’ve messed something up somewhere. Just worried about Sam though. Can’t talk much longer now, I gotta find her!
 		<<ChangeScene GameManager Scene2>>
 -> (Leave)
-	->  You’re right. Say, you got any idea what happened? You’re smart. What the hell could possibly go wrong with the prom court voting. Whatcha think? 
+	<<ChangeScene GameManager "Samuel">>
+===
+
+title: Sam
+tags:
+---
+	<<FadeIn Samuel>>
+	->  Say, you got any idea what happened? You’re smart. What the hell could possibly go wrong with the prom court voting. Whatcha think? 
 	<<StartTalk Samuel>>
 	Samuel: Could’ve been anything with our shitty school websites. If I had to guess, I’d say someone messed with 'em. Some sort of senior prank or something? 
 	<<StopTalk Samuel>>
@@ -57,9 +64,6 @@ Samuel: Zach, we should go… who knows what could happen here. People are angry
 	<<FadeOut Samuel>>
 	<<SetVar GameManager "intro" 2>>
 	<<ChangeScene GameManager "SamuelFlashback_1">>
-	
-
-
 ===
 
 title: IntroPtTwo
