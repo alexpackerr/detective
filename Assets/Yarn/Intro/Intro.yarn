@@ -14,7 +14,8 @@ tags:
 title: IntroPtOne
 tags:
 ---
-Announcement: ATTENTION STUDENTS: DUE TO THE HIGHLY UNEXPECTED OUTCOME OF THIS YEAR’S PROM COURT ELECTION POLL, WE ARE UNABLE TO DETERMINE THE WINNER OF THE PROM QUEEN TITLE. PLEASE RETURN TO YOUR CLASSES, ADDITIONAL INFORMATION WILL BE AVAILABLE SHORTLY. 
+Announcement: ATTENTION STUDENTS: DUE TO THE HIGHLY UNEXPECTED OUTCOME OF THIS YEAR’S PROM COURT ELECTION POLL, WE ARE UNABLE TO DETERMINE THE WINNER OF THE PROM QUEEN TITLE. 
+Announcement: PLEASE RETURN TO YOUR CLASSES, ADDITIONAL INFORMATION WILL BE AVAILABLE SHORTLY. 
 
 Students: Have you heard–?
 Students: What?
@@ -28,7 +29,8 @@ Students: SAMANTHA!
 Samuel: Zach, we should go… who knows what could happen here. People are angry. 
 <<StopTalk Samuel>>
 -> (Stay) 
-	-> You can go, Samuel. I think I’ll poke around this mess a little. Isn’t it time something happened around here?
+	-> You can go, Samuel. I think I’ll poke around this mess a little. 
+	-> Isn’t it time something happened around here?
 	<<wait 1>>
 	<<StartTalk Brent>>
 	<<FadeIn Brent>>
@@ -47,15 +49,17 @@ Samuel: Zach, we should go… who knows what could happen here. People are angry
 		<<ChangeScene GameManager Scene2>>
 -> (Leave)
 	<<ChangeScene GameManager "Samuel">>
+	
 ===
 
 title: Sam
 tags:
 ---
 	<<FadeIn Samuel>>
-	->  Say, you got any idea what happened? You’re smart. What the hell could possibly go wrong with the prom court voting. Whatcha think? 
+	Say, you got any idea what happened? You’re smart. What the hell could possibly go wrong with the prom court voting. Whatcha think? 
 	<<StartTalk Samuel>>
-	Samuel: Could’ve been anything with our shitty school websites. If I had to guess, I’d say someone messed with 'em. Some sort of senior prank or something? 
+	Samuel: Could’ve been anything with our shitty school websites. 
+	Samuel: If I had to guess, I’d say someone messed with 'em. Some sort of senior prank or something? 
 	<<StopTalk Samuel>>
 	-> Hm, could be. 
 	-> I like the way you think. Something’s definitely up here.	
@@ -85,6 +89,6 @@ Samuel: ...
 <<StartTalk Samuel>>
 Samuel: I’m fine. Just remembered something for a second that I wanted to forget. See ya.
 <<FadeOut Samuel>>
-CHARACTERNAME: <i> Something’s definitely up. Wonder if anyone else knows anything. </i>
+-> <i> Something’s definitely up. Wonder if anyone else knows anything. </i>
 <<ChangeScene GameManager Scene2>>
 ===
