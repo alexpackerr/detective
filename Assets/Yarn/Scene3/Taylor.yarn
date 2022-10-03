@@ -10,9 +10,12 @@ tags:
 <<FadeIn Taylor>>
 Taylor: Yo! Zach! My favorite little Junior! What’s up?
 <<StopTalk Taylor>>
-->  Hey, Taylor. Just investigating a little, I suppose. Yknow, I think I might know the whole Prom drama stories better than any of the staff. 
-<<StartTalk Taylor>>
-Taylor: Go you! That’s epic. I think you can do anything you set your mind to.  Us, we’re just living life. Won’t be long till the end of the year, the least we can do is make some memories now, prom or no prom. 
+-> Hey, Taylor. Just investigating a little, I suppose. 
+	<<StartTalk Taylor>>
+	Taylor: Go you! That’s epic. I think you can do anything you set your mind to.
+-> You guys know about the whole Prom drama story? 
+<<StartTalk Taylor>>  
+Taylor: Us, we’re just living life. Won’t be long till the end of the year, the least we can do is make some memories now, prom or no prom. 
 <<StopTalk Taylor>>
 ->  Did you hear anything suspicious while you were out “living life?” 
 <<StartTalk Taylor>>
