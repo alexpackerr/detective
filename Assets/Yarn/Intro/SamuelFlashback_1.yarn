@@ -1,18 +1,21 @@
 ﻿title: Start
 tags:
 ---
+<<StartTalk Unknown>>
 <<FadeIn Samuel>>
-<<StopTalk Samuel>>
-Anonymous: Hey Samuel, you’re good with computers, right??
-Anonymous: Mind helping me out with some… schoolwork?
-Anonymous: I mean, technically, it’s related to school.
-Anonymous: I’ll make it worth your while. Just let me know what you want. 
-Anonymous: Just make me an admin or whatever you need so I can change some stuff up
-Anonymous: Deal?
+<<FadeIn Unknown>>
+???: Hey Samuel, you’re good with computers, right??
+???: Mind helping me out with some… schoolwork?
+???: I mean, technically, it’s related to school.
+???: I’ll make it worth your while. Just let me know what you want. 
+???: Just make me an admin or whatever you need so I can change some stuff up
+???: Deal?
+<<StopTalk Unknown>>
 <<StartTalk Samuel>>
 Samuel: ...no.
 <<StopTalk Samuel>>
 <<FadeOut Samuel>>
+<<FadeOut Unknown>>
 <<ChangeScene GameManager "Intro">>
 
 ===	
