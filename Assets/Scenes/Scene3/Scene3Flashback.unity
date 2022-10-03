@@ -755,6 +755,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogue System 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3209408905504018775, guid: 7646f18c2c82f104892890d8b3f77936, type: 3}
+      propertyPath: startNode
+      value: TaylorFlashback
+      objectReference: {fileID: 0}
     - target: {fileID: 3209408905754559136, guid: 7646f18c2c82f104892890d8b3f77936, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
