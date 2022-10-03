@@ -73,6 +73,8 @@ tags:
 title: IntroPtTwo
 tags:
 ---
+<<FadeIn Brent>>
+<<StartTalk Brent>>
 Brent: Sorry, what was I saying? Oogh, I feel kinda weird. Thanks anyway, Zach. I’ll keep looking.
 <<ChangeScene GameManager Scene2>>
 
