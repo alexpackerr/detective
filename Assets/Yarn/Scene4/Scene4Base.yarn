@@ -184,7 +184,10 @@ Brent: Wait, sorry, when it’s over? Is something up?
 title: Brent2
 tags:
 ---
+<<StartTalk Brent>>
+<<fadeIn Brent>>
 Brent: Sometimes, it doesn’t even seem like… oh well. We’ll see tonight. She’ll be the queen tonight, I’m sure. Feel free to join us! We should get a ball game going during the party.
+<<fadeOut Brent>>
 <<jump Start>>	
 
 ===
@@ -192,24 +195,29 @@ Brent: Sometimes, it doesn’t even seem like… oh well. We’ll see tonight. S
 title: Marissa1
 tags:
 ---
+<<StartTalk Marissa>>
+<<FadeIn Marissa>>
 <<set $TalkedToMarissa = GetVar("MarissaMet")>>
 <<if $TalkedToMarissa == 1>>
 	Marissa: Ugh, you again. 
+	<<StopTalk Marissa>>
 	-> Is there anything you’re not telling me?
 <<else>>
 	Marissa: Um, who are you? 
+	<<StopTalk Marissa>>
 	-> Meeting new people, like yourself. I happen to be pretty curious about the incident and you seem like the kind of person who might have caught something more.
 <<endif>>
-
+<<StartTalk Marissa>>
 Marissa: What, just because I’m new? Get out of here.. I’m not even going to your prom. I couldn’t care less about what happens there. 
-
-
-
+<<StopTalk Marissa>>
 -> Why? Don’t you want to be a part of the school?
+	<<StartTalk Marissa>>
 	Marissa: Hell no. I might be new here, but I don’t need to go to your guys’s party.
 	<<jump Marissa2>>
 ->  Staying out of the Drama, I see. 
+	<<StartTalk Marissa>>
 	Marissa: You seem to love the drama. Seem fixated on it. I don’t know why you’re coming to me about it. Look, if I had anything for you, I’d have given it to you already. 
+	<<FadeOut Marissa>>
 	<<ChangeScene GameManager "Scene4MarissaFlashback">>
 
 ===
@@ -217,14 +225,21 @@ Marissa: What, just because I’m new? Get out of here.. I’m not even going to
 title: MarissaFlashback
 tags:
 ---
+<<StartTalk Unknown>>
+<<FadeIn Unknown>>
+<<FadeIn Marissa>>
 ???: Look, there’s all sort of announcements about the prom royalty too. Seems like a pretty big deal at their– I guess your school. 
-
+<<StopTalk Unknown>>
+<<StartTalk Marissa>>
 Marissa: Ugh, I don’t know anything about these girls, but from the pictures they all seem pretty stuck-up. 
-
+<<StopTalk Marissa>>
+<<StartTalk Unknown>>
 ???: You can vote for em too. Look, they’re collecting emails and everything. Seems like they want their prom to be pretty “secure.” 
-
+<<StopTalk Unknown>>
+<<StartTalk Marissa>>
 Marissa: Guess they’ll have to see about that. Bet someone could have some fun with the system. 
-
+<<FadeOut Marissa>>
+<<FadeOut Unknown>>
 <<SetVar GameManager "CheckMarissa4" 1>>
 <<ChangeScene GameManager "Scene4MarissaMain">>
 
@@ -234,8 +249,11 @@ title: Marissa2
 tags:
 ---
 
+<<FadeIn Marissa>>
 -> I see. 
+<<StartTalk Marissa>>
 Marissa: What are you going on about now? Go interrogate someone else. 
+<<StopTalk Marissa>>
 <<jump Start>>
 
 ===
@@ -243,20 +261,21 @@ Marissa: What are you going on about now? Go interrogate someone else.
 title: Levi1
 tags:
 ---
+<<FadeIn Levi>>
 -> Mr.Levi, what’s going on? You’re not leaving, are you?
-
+<<StartTalk Levi>>
 Mr.Levi: Ha, I’m afraid so. Got a better offer somewhere else. Heard they treat their teachers right there. 
 
 Mr.Levi: It’ll be a shame to leave you kids behind, though. Incredible to see what you all can do, when you put your minds to it. 
 
 Mr.Levi: Its time for me to go, though. Sometimes I wish I could leave the school a little “parting gift.” 
-
+<<StopTalk Levi>>
 -> You didn’t have anything to do with this?
-
+<<StartTalk Levi>>
 Mr.Levi: Look, what students do with the tools I give them is none of my business. Even if I show em some ways you can play with the school’s websites and servers. 
 
 Mr.Levi: Be good out there!
-
+<<FadeOut Levi>>
 <<jump Start>>
 
 ===
@@ -264,18 +283,21 @@ Mr.Levi: Be good out there!
 title: Taylor1
 tags:
 ---
+<<StartTalk Taylor>>
+<<FadeIn Taylor>>
 Taylor: Hey Zach! Heard you wanted to meet up? Maybe chat a little before I head out? I approve. 
-
+<<StopTalk Taylor>>
 -> Sorry Taylor, I’m still working out this whole prom story. 
-
+<<StartTalk Taylor>>
 Taylor: Alright! I’ve heard a little more since this morning’s little fiasco. I wouldn’t be surprised if it was a teacher or something. Someone unhappy enough with the way the school’s going to want to give the school a little surprise.
-
+<<StopTalk Taylor>>
 -> Thanks, Taylor. You sure it wasn’t anyone in the band?
-
+<<StartTalk Taylor>>
 Taylor: Look, we’re not doing anything that could risk us getting our Spring Concert cancelled. Especially me. Its my last hurrah.
-
+<<StopTalk Taylor>>
 -> Interesting. 
-
+<<StartTalk Taylor>>
 Taylor: Keep up the work, little detective! You’ve got this. 
+<<StopTalk Taylor>>
 <<jump Start>>
 ===

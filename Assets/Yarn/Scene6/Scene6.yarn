@@ -1,40 +1,45 @@
 ﻿title: Start
 tags:
 ---
+<<StartTalk Samuel>>
+<<FadeIn Samuel>>
 Samuel: Hey Zach, I’m doing better now. How’d your exploration go? I know you were kind of playing detective earlier? 
-
+<<StopTalk Samuel>>
 -> I can’t say. Might just’ve been a glitch. 
-
 -> I think I might have figured it out. I’m certain someone tampered with the system, and I think I know who did it.
-	-> Samantha
-		Zach: Samantha. Not that I’ve paid much attention to her in the past, but she’s been acting weird lately, from what I’ve heard. Heard she might not even have wanted the position. 
-	-> Mr.Levi
-		Zach: Mr.Levi. He showed us how to tamper with the school’s websites before, remember? And he has reason to be annoyed with the school. 
-	-> Marissa
-		Zach: Marissa. That one new girl? I feel she might be one to mess with the school, after its messed with her. 
-	-> Brent
-		Zach: Brent. He’s been concerned about Samantha, and in some way, i guess, he could have decided being prom queen wasn’t best for her. 
-	-> Taylor 
-		Zach: Taylor. They want to be remembered, don’t they? And I think the band has some sort of feud with the School.
+	-> <i> Samantha </i>
+		Samantha. Not that I’ve paid much attention to her in the past, but she’s been acting weird lately, from what I’ve heard. Heard she might not even have wanted the position. 
+	-> <i> Mr.Levi </i>
+		Mr.Levi. He showed us how to tamper with the school’s websites before, remember? And he has reason to be annoyed with the school. 
+	-> <i> Marissa </i>
+		Marissa. That one new girl? I feel she might be one to mess with the school, after its messed with her. 
+	-> <i> Brent </i>
+		Brent. He’s been concerned about Samantha, and in some way, i guess, he could have decided being prom queen wasn’t best for her. 
+	-> <i> Taylor  </i>
+		Taylor. They want to be remembered, don’t they? And I think the band has some sort of feud with the School.
+	<<StartTalk Samuel>>
 	Samuel: Wow, that’s quite a claim. I don’t know if it would be a good idea to share that with anyone. I mean, look how much trouble just the confusion caused.
 	Samuel:  But, I guess, maybe the news could calm people down. Maybe the culprit could’ve known who truly won?
+	<<StopTalk Samuel>>
 	<i> Behind you, the crowd screeches indiscriminately. Some students are having a heated argument with security officers. Out in the parking lot, people throw objects at random. </i>
 
 	<i> The choice is yours. </i>
 	-> Do not share your thoughts.
 		Announcement: GOOD EVENING, STUDENTS. WE APOLOGIZE FOR THE INCONVINIENCE THIS MORNING. AFTER SOME DELIBERATION, WE ARE PROUD TO ANNOUNCE THE IDENTITY OF YOUR PROM QUEEN: ANYA FERGUSON. 
-
+		<<StartTalk Samuel>>
 		Samuel:  I guess things can go back to normal now? I like that. And I hope you had your fun with your detective work. 
-		<i> Later that night... </i>	
-		???: Hi, [Player]. Brent’s been telling me about how you spent the day asking around about the Prom Queen fiasco. 
+		<<FadeOut Samuel>>
+		<i> Later that night... </i>
+		<<FadeIn Phone>>	
+		???: Hi, Zach. Brent’s been telling me about how you spent the day asking around about the Prom Queen fiasco. 
 		???: I’ve heard about it from around the school, too.  I figured you should know. I sabotaged the votes. 
 		???: I know I should’ve gone about it another way. It’ll be hard to tell the others, and I don’t know if I’ll ever be able to. 
 		???: But thank you for not going out and making too big of a show of it. Thank you. 
 		Samantha: -Samantha
+		<<FadeOut Phone>>
+		<<FadeIn Samuel>>
 		Samuel: You alright? Who’s messaging you?
-		Zach: No one. C’mon, Samuel. It’s our prom night, afterall. Let's celebrate. Why don’t we join in? Together?
-
-
+		-> No one. C’mon, Samuel. It’s our prom night, afterall. Let's celebrate. Why don’t we join in. Together?
 	-> Accuse someone. 
 		-> Samantha
 			<<SetVar GameManager "Accused" 1>>
@@ -48,7 +53,7 @@ Samuel: Hey Zach, I’m doing better now. How’d your exploration go? I know yo
 			<<SetVar GameManager "Accused" 5>>
 		-> Samuel
 			<<SetVar GameManager "Accused" 6>>
-
+	<<FadeOut Samuel>>
 	<<jump DecisionTree>>
 ===
 
@@ -65,39 +70,51 @@ tags:
 
 title: Samuel
 ---
+
 <i> You leave a report at the Office. You spend your night at the prom. </i>
- 
+<<StartTalk Samuel>>
+<<FadeIn Samuel>>
 Samuel: Is everything alright? 
+<<StopTalk Samuel>>
+-> Yeah, it’s fine! Prom night! Best time in our lives!
+<<FadeOut Samuel>>
+<<ChangeScene GameManager SamuelAccused>>
+===
 
-Zach: Yeah, it’s fine! Prom night! Best time in our lives!
-
+title: Samuel2
+---
 <i> Tomorrow... </i>
 
+<<StartTalk Phone>>
+<<FadeIn Phone>>
 Samuel: WHAT. THE. FUCK. Zach, WHAT DID YOU DO? I’M SUSPENDED. WE’RE FRIENDS, AREN’T WE, ZACH?
-
-Zach: I–
-
+<<StopTalk Phone>>
+-> I–
+<<StartTalk Phone>>
 Samuel: You were playing detective, and you got me suspended. Fuck you. 
-
-Zach: Samuel, wait!
-
-Samuel:
-No, Zach, I’m leaving. 
-
+<<StopTalk Phone>>
+-> Samuel, wait!
+<<StartTalk Phone>>
+Samuel: No, Zach, I’m leaving. 
+<<FadeOut Phone>>
 Announcement: GOOD EVENING, STUDENTS. WE APOLOGIZE FOR THE INCONVINIENCE THIS MORNING. AFTER SOME DELIBERATION, WE ARE PROUD TO ANNOUNCE THE IDENTITY OF YOUR PROM QUEEN: ANYA FERGUSON. 
-
-<i> Later that night, you receive a message on your phone. </i>
-
-Message: Dear [Player], we have received your tip about student Samuel Morrison, and given our current situation, we have ample reason to suspect validity behind your claims. Thank you for using the student tip hotline.
+<i> Later that day, you receive a message on your phone. </i>
+<<StartTalk Phone>>
+<<FadeIn Phone>>
+School: Dear Zach, we have received your tip about student Samuel Morrison, and given our current situation, we have ample reason to suspect validity behind your claims. Thank you for using the student tip hotline.
 
 ===
 title: Generic
 ---
 <i> You leave a report at the Office. You spend your night at the prom. </i>
+<<StartTalk Samuel>>
+<<FadeIn Samuel>>
 Samuel: Is everything alright? 
+<<StopTalk Samuel>>
 
-Zach: Yeah, it’s fine! Prom night! Best time in our lives!
+-> Yeah, it’s fine! Prom night! Best time in our lives!
 
+<<StartTalk Samuel>>
 <<if $Check == 1>>
 Samuel: You know, I haven’t seen Samantha tonight. Have you heard anything from them?
 <<elseif $Check == 2>>
@@ -109,13 +126,13 @@ Samuel: You know, I haven’t seen Brent tonight. Have you heard anything from t
 <<elseif $Check == 5>>
 Samuel: You know, I haven’t seen taylor tonight. Have you heard anything from them?
 <<endif>>
-
-Zach: …
+<<StopTalk Samuel>>
+-> …
 
 Announcement: GOOD EVENING, STUDENTS. WE APOLOGIZE FOR THE INCONVINIENCE THIS MORNING. AFTER SOME DELIBERATION, WE ARE PROUD TO ANNOUNCE THE IDENTITY OF YOUR PROM QUEEN: ANYA FERGUSON. 
-
+<<StartTalk Samuel>>
 Samuel: Zach, you didn’t say anything, did you? 
-
-Zach: Samuel, I solved the case. 
+<<StopTalk Samuel>>
+-> Samuel, I solved the case. 
 
 ===
