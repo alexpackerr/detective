@@ -3,10 +3,11 @@ tags:
 ---
 <<StartTalk Samuel>>
 <<FadeIn Samuel>>
-Samuel: Hey Zach, I’m doing better now. How’d your exploration go? I know you were kind of playing detective earlier? 
+Samuel: Hey Zach, I’m doing better now. How’d your exploration go? 
+Samuel: I know you were kind of playing detective earlier? 
 <<StopTalk Samuel>>
 -> I can’t say. Might just’ve been a glitch. 
--> I think I might have figured it out. I’m certain someone tampered with the system, and I think I know who did it.
+-> I’m certain someone tampered with the system, and I think I know who.
 	-> <i> Samantha </i>
 		Samantha. Not that I’ve paid much attention to her in the past, but she’s been acting weird lately, from what I’ve heard. Heard she might not even have wanted the position. 
 	-> <i> Mr.Levi </i>
@@ -77,7 +78,7 @@ title: Samuel
 <<FadeIn Samuel>>
 Samuel: Is everything alright? 
 <<StopTalk Samuel>>
--> Yeah, it’s fine! Prom night! Best time in our lives!
+Yeah, it’s fine! Prom night! Best time in our lives!
 <<FadeOut Samuel>>
 <<ChangeScene GameManager SamuelAccused>>
 ===
