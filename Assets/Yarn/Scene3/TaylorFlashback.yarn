@@ -1,16 +1,30 @@
 ﻿title: TaylorFlashback
 tags:
 ---
+<<StartTalk Maya>>
+<<FadeIn Taylor>>
+<<FadeIn Maya>>
+<<FadeIn Jamie>>
+<<FadeIn BandKid>>
 Maya: Did you see how much they’re spending on the prom this year?
-
+<<StopTalk Maya>>
+<<StartTalk Jamie>>
 Jamie: Triple our budget, that’s for sure. 
-
+<<StopTalk Jamie>>
+<<StartTalk Taylor>>
 Taylor: Imagine if the school gave us some of that. We’d definitely get our trip. Europe maybe? Out of Ohio at least. I’d love to spend the time with you nerds. 
+<<StopTalk Taylor>>
 
+<<StartTalk BandKid>>
 Band Kid: Imagine if we crashed the show somehow! All snuck in or–something.
-
+<<StopTalk BandKid>>
+<<StartTalk Taylor>>
 Taylor: Ha! That’d be something. 
-
 Taylor: You know, I was in this class this one time…
-
+<<StopTalk Taylor>>
+<<FadeOut Taylor>>
+<<FadeOut Maya>>
+<<FadeOut Jamie>>
+<<FadeOut BandKid>>
+<<ChangeScene GameManager Scene3>>
 ===

@@ -22,25 +22,31 @@ Students: LOOK, LOOK HERE!
 Students: SAMANTHA!
 
 <<StartTalk Samuel>>
-<<wait 2>>
+<<wait 1>>
 
 <<FadeIn Samuel>>
-Samuel: CHARACTERNAME, we should go… who knows what could happen here. People are angry. 
+Samuel: Zach, we should go… who knows what could happen here. People are angry. 
 <<StopTalk Samuel>>
 -> (Stay) 
-	CHARACTERNAME: You can go, Samuel. I think I’ll poke around this mess a little. Isn’t it time something happened around here?
-	<<FadeOut Samuel>>
+	-> You can go, Samuel. I think I’ll poke around this mess a little. Isn’t it time something happened around here?
+	<<wait 1>>
+	<<StartTalk Brent>>
+	<<FadeIn Brent>>
 	<<SetVar GameManager "BrentIntro" 1>>
-	Brent: Oh, hey CHARACTERNAME! You seen Samantha around here? I've been trying to get a hold of her, but she isn't picking up. 
+	Brent: Oh, hey Zach! You seen Samantha around here? I've been trying to get a hold of her, but she isn't picking up. 
 	Brent: Weird, huh? Y’know, with her being like, a candidate for prom queen, and all.
+	<<StopTalk Brent>>
 	-> Haven't seen her. 
+		<<StartTalk Brent>>
 		Brent: Oh… I see. She’s been acting weird lately. I–
 		<<SetVar GameManager "intro" 1>>
 		<<ChangeScene GameManager "BrentFlashback_1">>
 	-> Never mind that. Do you know what's going on here?
+		<<StartTalk Brent>>
 		Brent: Couldn’t tell you. One of the guys said he thinks something’s wrong with the system. Someone must’ve messed something up somewhere. Just worried about Sam though. Can’t talk much longer now, I gotta find her!
+		<<ChangeScene GameManager Scene2>>
 -> (Leave)
-	CHARACTERNAME: You’re right. Say, you got any idea what happened? <i> You’re smart.</i> What the hell could possibly go wrong with the prom court voting. Whatcha think? 
+	->  You’re right. Say, you got any idea what happened? You’re smart. What the hell could possibly go wrong with the prom court voting. Whatcha think? 
 	<<StartTalk Samuel>>
 	Samuel: Could’ve been anything with our shitty school websites. If I had to guess, I’d say someone messed with 'em. Some sort of senior prank or something? 
 	<<StopTalk Samuel>>
@@ -48,8 +54,9 @@ Samuel: CHARACTERNAME, we should go… who knows what could happen here. People 
 	-> I like the way you think. Something’s definitely up here.	
 		<<StartTalk Samuel>>
 		Samuel: I wouldn’t go that far. I’m sure the school will figure it out. Eventually. Let’s just get back to class. 
-		<<SetVar GameManager "intro" 2>>
-		<<ChangeScene GameManager "SamuelFlashback_1">>
+	<<FadeOut Samuel>>
+	<<SetVar GameManager "intro" 2>>
+	<<ChangeScene GameManager "SamuelFlashback_1">>
 	
 
 
@@ -58,7 +65,8 @@ Samuel: CHARACTERNAME, we should go… who knows what could happen here. People 
 title: IntroPtTwo
 tags:
 ---
-Brent: Sorry, what was I saying? Oogh, I feel kinda weird. Thanks anyway, CHARACTERNAME. I’ll keep looking.
+Brent: Sorry, what was I saying? Oogh, I feel kinda weird. Thanks anyway, Zach. I’ll keep looking.
+<<ChangeScene GameManager Scene2>>
 
 ===
 
@@ -69,9 +77,10 @@ tags:
 <<wait 1>>
 <<FadeIn Samuel>>
 Samuel: ...
-CHARACTERNAME: Hey, you alright there?
+->  Hey, you alright there?
 <<StartTalk Samuel>>
 Samuel: I’m fine. Just remembered something for a second that I wanted to forget. See ya.
 <<FadeOut Samuel>>
 CHARACTERNAME: <i> Something’s definitely up. Wonder if anyone else knows anything. </i>
+<<ChangeScene GameManager Scene2>>
 ===

@@ -1,14 +1,30 @@
 ﻿title: Start
 tags:
 ---
-
+<<StartTalk Brent>>
+<<FadeIn Brent>>
+<<FadeIn Samantha>>
 Brent: Look, Sam, aren’t you excited? You’re on the ballot for prom queen!
+<<StopTalk Brent>>
+<<StartTalk Samantha>>
 Samantha: They sent it out– already? Do you think many people have seen it yet??
+<<StopTalk Samantha>>
+<<StartTalk Brent>>
 Brent: I’m sure they have. And I’m sure they’ve voted for you!
+<<StopTalk Brent>>
+<<StartTalk Samantha>>
 Samantha: As they should’ve! Heh.
+<<StopTalk Samantha>>
+<<StartTalk Brent>>
 Brent: I’ll go get the girls. C’mon! Tonight, we’re partying.
+<<StopTalk Brent>>
+<<StartTalk Samantha>>
 Samantha: I’ll be right there. Need to go visit someone. Wait for me?
+<<StopTalk Samantha>>
+<<StartTalk Brent>>
 Brent: Of course!
-
+<<StopTalk Brent>>
+<<FadeOut Brent>>
+<<FadeOut Samantha>>
 <<ChangeScene GameManager "Intro">>
 ===

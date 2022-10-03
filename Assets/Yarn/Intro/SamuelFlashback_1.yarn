@@ -15,4 +15,4 @@ Samuel: ...no.
 <<FadeOut Samuel>>
 <<ChangeScene GameManager "Intro">>
 
-===
+===	
