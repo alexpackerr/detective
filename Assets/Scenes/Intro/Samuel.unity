@@ -400,6 +400,10 @@ PrefabInstance:
       propertyPath: startNode
       value: Sam
       objectReference: {fileID: 0}
+    - target: {fileID: 4406296452240135343, guid: 1d6a99bc1fc717a43bf8c56c4e357c75, type: 3}
+      propertyPath: yarnProject
+      value: 
+      objectReference: {fileID: 7545569452688597077, guid: b4a1533a26046894582d5948206a4c8b, type: 3}
     - target: {fileID: 4406296452240135345, guid: 1d6a99bc1fc717a43bf8c56c4e357c75, type: 3}
       propertyPath: m_RootOrder
       value: 3

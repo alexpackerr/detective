@@ -159,20 +159,22 @@ Brent: You been alright? Today’s been pretty intense. All this drama over the 
 title: BrentFlashback
 tags:
 ---
+<<StopTalk Brent>>
+<<StopTalk Samantha>>
 <<FadeIn Brent>>
 <<FadeIn Samantha>>
 <<StartTalk Brent>>
 Brent: It’s Tomorrow, Sam, it’s tomorrow! Can you believe it?
 <<StopTalk Brent>>
-<<StartTalk Samanatha>>
+<<StartTalk Samantha>>
 Samantha: I know. The group chat’s been going wild. I can’t believe it. 
-<<StopTalk Samantha
+<<StopTalk Samantha>>
 <<StartTalk Brent>>
 Brent: You’re the clear winner, of course. No one else stands a chance against you. 
 <<StopTalk Brent>>
-<<StartTalk Samanatha>>
+<<StartTalk Samantha>>
 Samantha: Hah! Thanks, Brent. Once this is all over, I’m sure we’ll sweep the end of the year. 
-<<StopTalk Samantha
+<<StopTalk Samantha>>
 <<StartTalk Brent>>
 Brent: Wait, sorry, when it’s over? Is something up?
 <<FadeOut Brent>>
@@ -262,7 +264,7 @@ title: Levi1
 tags:
 ---
 <<FadeIn Levi>>
--> Mr.Levi, what’s going on? You’re not leaving, are you?
+Mr.Levi, what’s going on? You’re not leaving, are you?
 <<StartTalk Levi>>
 Mr.Levi: Ha, I’m afraid so. Got a better offer somewhere else. Heard they treat their teachers right there. 
 
@@ -289,7 +291,8 @@ Taylor: Hey Zach! Heard you wanted to meet up? Maybe chat a little before I head
 <<StopTalk Taylor>>
 -> Sorry Taylor, I’m still working out this whole prom story. 
 <<StartTalk Taylor>>
-Taylor: Alright! I’ve heard a little more since this morning’s little fiasco. I wouldn’t be surprised if it was a teacher or something. Someone unhappy enough with the way the school’s going to want to give the school a little surprise.
+Taylor: Alright! I’ve heard a little more since this morning’s little fiasco. 
+Taylor: I wouldn’t be surprised if it was a teacher or something. Someone unhappy enough with the way the school’s going to want to give the school a little surprise.
 <<StopTalk Taylor>>
 -> Thanks, Taylor. You sure it wasn’t anyone in the band?
 <<StartTalk Taylor>>
