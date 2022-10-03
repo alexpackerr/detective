@@ -348,7 +348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3209408905504018775, guid: 7646f18c2c82f104892890d8b3f77936, type: 3}
       propertyPath: startNode
-      value: Samuel
+      value: Samuel2
       objectReference: {fileID: 0}
     - target: {fileID: 3209408905504018775, guid: 7646f18c2c82f104892890d8b3f77936, type: 3}
       propertyPath: yarnProject

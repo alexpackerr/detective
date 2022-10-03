@@ -66,7 +66,7 @@ tags:
 ---
 <<FadeIn Samuel>>
 <i> Scouring the courtyard, you can't find Samuel anywhere. Thankfully, you have their number. </i>
-<i> Hey, where are you? </i>
+-> Hey, where are you?
 <<StartTalk Samuel>>
 Samuel: Still in the classroom. Don’t feel like talking much, I guess. You can come if you need to, though. 
 <<FadeOut Samuel>>
