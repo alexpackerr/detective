@@ -63,6 +63,8 @@ tags:
 	Samuel: If I had to guess, I’d say someone messed with 'em. Some sort of senior prank or something? 
 	<<StopTalk Samuel>>
 	-> Hm, could be. 
+		<<StartTalk Samuel>>
+		Samuel: I’m sure the school will figure it out. Eventually. Let’s just get back to class.
 	-> I like the way you think. Something’s definitely up here.	
 		<<StartTalk Samuel>>
 		Samuel: I wouldn’t go that far. I’m sure the school will figure it out. Eventually. Let’s just get back to class. 
