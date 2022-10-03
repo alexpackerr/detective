@@ -83,7 +83,8 @@ tags:
 <<endif>>
 <<StartTalk Samuel>>
 <<FadeIn Samuel>>
-Samuel: I can’t believe it. So many people have been bothering me today. Why? Just because I won the engineering challenge once? That doesn’t even have anything to do with “hacking” or anything they’re talking about? 
+Samuel: I can’t believe it. So many people have been bothering me today. Why? Just because I won the engineering challenge once? 
+Samuel: That doesn’t even have anything to do with “hacking” or anything they’re talking about? 
 <<StopTalk Samuel>>
 -> People bothering you about that kind of thing again?	
 	<<StartTalk Samuel>>
@@ -123,9 +124,10 @@ Samuel: <i> Typing... </i>
 title: Samuel3
 tags:
 ---
--> You know, the faster they figure this out, the faster everyone will get off your back. 
+You know, the faster they figure this out, the faster everyone will get off your back. 
 Samuel: I guess you’re right…
--> You know, I’ve gotten some ideas about this whole situation. I’m sure it’ll get cleared up soon.
+-> I’ve gotten some ideas about this whole situation. 
+-> I’m sure it’ll get cleared up soon.
 <<ChangeScene GameManager "Scene4Main">>
 ===
 
