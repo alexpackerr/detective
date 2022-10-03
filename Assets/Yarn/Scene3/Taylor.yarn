@@ -41,6 +41,6 @@ Band Kid: Taylor, are you alright? You kind of spaced out for a second...or ten.
 <<StartTalk Taylor>>
 Taylor: I’m fine. Probably just excited for you guys. See you later, Zach!
 <<FadeOut Taylor>>
-<<ChangeScene GameManager Scene4Main>>
+<<ChangeScene GameManager "Scene4main">>
 
 ===

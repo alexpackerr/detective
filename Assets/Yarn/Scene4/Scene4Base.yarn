@@ -4,11 +4,13 @@ tags:
 
 <<set $Check = GetVar("CheckBrent4")>>
 <<if $Check == 1>>
+	<<SetVar GameManager "CheckBrent4" 0>>
 	<<jump Brent2>>
 <<endif>>
 
 <<set $Check = GetVar("CheckMarissa4")>>
 <<if $Check == 1>>
+	<<SetVar GameManager "CheckMarissa4" 0>>
 	<<jump Marissa2>>
 <<endif>>
 
@@ -29,7 +31,7 @@ tags:
 
 <<SetVar GameManager "Scene4" 1>>
 <<else>>
-<i> Lunch is about halfway over, I think I can talk with someone else before the bell </i>
+<i> Lunch is about halfway over, I think I can talk with someone else before the bell. </i>
 <<SetVar GameManager "Scene4-2" 1>>
 <<endif>>
 <<set $TestSamuel = GetVar("Samuel4")>>
@@ -48,10 +50,10 @@ tags:
 	<<jump Marissa1>>
 -> Talk with Mr.Levi? <<if $TestLevi == 0>>
 	<<SetVar GameManager "Levi4" 1>>
-	<<jump Levi1>>
+	<<ChangeScene GameManager Scene4Levi>>
 -> Talk with Taylor? <<if $TestTaylor == 0>>
 	<<SetVar GameManager "Taylor4" 1>>
-	<<jump Taylor>>
+	<<jump Taylor1>>
 ===
 
 title: EndScene
@@ -188,9 +190,9 @@ title: Brent2
 tags:
 ---
 <<StartTalk Brent>>
-<<fadeIn Brent>>
+<<FadeIn Brent>>
 Brent: Sometimes, it doesn’t even seem like… oh well. We’ll see tonight. She’ll be the queen tonight, I’m sure. Feel free to join us! We should get a ball game going during the party.
-<<fadeOut Brent>>
+<<FadeOut Brent>>
 <<jump Start>>	
 
 ===
@@ -206,9 +208,9 @@ tags:
 	<<StopTalk Marissa>>
 	-> Is there anything you’re not telling me?
 <<else>>
-	Marissa: Um, who are you? 
+	Marissa: Um, who are you? And what are you doing?
 	<<StopTalk Marissa>>
-	-> Meeting new people, like yourself. I happen to be pretty curious about the incident and you seem like the kind of person who might have caught something more.
+	-> Zach. I'm meeting new people, like yourself. I happen to be pretty curious about the incident and you seem like the kind of person who might have caught something more.
 <<endif>>
 <<StartTalk Marissa>>
 Marissa: What, just because I’m new? Get out of here.. I’m not even going to your prom. I couldn’t care less about what happens there. 
@@ -244,7 +246,7 @@ Marissa: Guess they’ll have to see about that. Bet someone could have some fun
 <<FadeOut Marissa>>
 <<FadeOut Unknown>>
 <<SetVar GameManager "CheckMarissa4" 1>>
-<<ChangeScene GameManager "Scene4MarissaMain">>
+<<ChangeScene GameManager "Scene4main">>
 
 ===
 
@@ -256,7 +258,7 @@ tags:
 -> I see. 
 <<StartTalk Marissa>>
 Marissa: What are you going on about now? Go interrogate someone else. 
-<<StopTalk Marissa>>
+<<FadeOut Marissa>>
 <<jump Start>>
 
 ===
@@ -279,7 +281,7 @@ Mr.Levi: Look, what students do with the tools I give them is none of my busines
 
 Mr.Levi: Be good out there!
 <<FadeOut Levi>>
-<<jump Start>>
+<<ChangeScene GameManager Scene4main>>
 
 ===
 

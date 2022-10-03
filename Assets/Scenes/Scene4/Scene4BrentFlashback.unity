@@ -326,7 +326,7 @@ PrefabInstance:
     - target: {fileID: 3209408905504018775, guid: 7646f18c2c82f104892890d8b3f77936, type: 3}
       propertyPath: yarnProject
       value: 
-      objectReference: {fileID: 7545569452688597077, guid: 28b202abf0816af4081df70ccb0c5c0a, type: 3}
+      objectReference: {fileID: 7545569452688597077, guid: 3c7cecaf75c83634c904bafedd723ac7, type: 3}
     - target: {fileID: 3209408905754559136, guid: 7646f18c2c82f104892890d8b3f77936, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
