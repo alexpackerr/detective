@@ -42,6 +42,7 @@ Samuel: I know you were kind of playing detective earlier?
 		<<FadeIn Samuel>>
 		Samuel: You alright? Who’s messaging you?
 		-> No one. C’mon, Samuel. It’s our prom night, afterall. Let's celebrate. Why don’t we join in. Together?
+		<<ChangeScene GameManager End>>
 	-> Accuse someone. 
 		-> Samantha
 			<<SetVar GameManager "Accused" 1>>
@@ -104,7 +105,7 @@ Announcement: GOOD EVENING, STUDENTS. WE APOLOGIZE FOR THE INCONVINIENCE THIS MO
 <<StartTalk Phone>>
 <<FadeIn Phone>>
 School: Dear Zach, we have received your tip about student Samuel Morrison, and given our current situation, we have ample reason to suspect validity behind your claims. Thank you for using the student tip hotline.
-
+<<ChangeScene GameManager End>>
 ===
 title: Generic
 ---
@@ -126,7 +127,7 @@ Samuel: You know, I haven’t seen Marissa tonight. Have you heard anything from
 <<elseif $Check == 4>>
 Samuel: You know, I haven’t seen Brent tonight. Have you heard anything from them?
 <<elseif $Check == 5>>
-Samuel: You know, I haven’t seen taylor tonight. Have you heard anything from them?
+Samuel: You know, I haven’t seen Taylor tonight. Have you heard anything from them?
 <<endif>>
 <<StopTalk Samuel>>
 -> …
@@ -136,5 +137,5 @@ Announcement: GOOD EVENING, STUDENTS. WE APOLOGIZE FOR THE INCONVINIENCE THIS MO
 Samuel: Zach, you didn’t say anything, did you? 
 <<StopTalk Samuel>>
 -> Samuel, I solved the case. 
-
+<<ChangeScene GameManager End>>
 ===

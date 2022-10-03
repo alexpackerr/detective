@@ -263,6 +263,10 @@ PrefabInstance:
       value: Dialogue System 2
       objectReference: {fileID: 0}
     - target: {fileID: 3209408905504018775, guid: 7646f18c2c82f104892890d8b3f77936, type: 3}
+      propertyPath: startNode
+      value: Samuel2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3209408905504018775, guid: 7646f18c2c82f104892890d8b3f77936, type: 3}
       propertyPath: yarnProject
       value: 
       objectReference: {fileID: 7545569452688597077, guid: 8b8fbca79f1efe44785676222646746d, type: 3}

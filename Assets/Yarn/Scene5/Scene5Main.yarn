@@ -6,7 +6,7 @@ tags:
 <<StartTalk Samantha>>
 Samantha: Yes, thank you! Haha. 
 <<FadeOut Samantha>>
-<<SceneChange GameManager "Scene5SamFlashback">>
+<<ChangeScene GameManager "Scene5SamFlashback">>
 ===
 
 title: SamFlashback
@@ -42,13 +42,13 @@ tags:
 ???: Something I learned. One of the most interesting things I ever did in this school.
 <<FadeOut Unknown>> 
 <<FadeOut Unknown2>>
-<<SceneChange GameManager "Scene5Main2">>
+<<ChangeScene GameManager "Scene5Main2">>
 ===
 
 title: Sam2
 tags:
 ---
 <i> What… who… that was the hardest one yet… Samantha? Was that you? </i>
-<<SceneChange GameManager "Scene6">>
+<<ChangeScene GameManager "Scene6">>
 ===
 
