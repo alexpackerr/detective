@@ -1,0 +1,121 @@
+﻿title: Start
+tags:
+---
+Samuel: Hey Zach, I’m doing better now. How’d your exploration go? I know you were kind of playing detective earlier? 
+
+-> I can’t say. Might just’ve been a glitch. 
+
+-> I think I might have figured it out. I’m certain someone tampered with the system, and I think I know who did it.
+	-> Samantha
+		Zach: Samantha. Not that I’ve paid much attention to her in the past, but she’s been acting weird lately, from what I’ve heard. Heard she might not even have wanted the position. 
+	-> Mr.Levi
+		Zach: Mr.Levi. He showed us how to tamper with the school’s websites before, remember? And he has reason to be annoyed with the school. 
+	-> Marissa
+		Zach: Marissa. That one new girl? I feel she might be one to mess with the school, after its messed with her. 
+	-> Brent
+		Zach: Brent. He’s been concerned about Samantha, and in some way, i guess, he could have decided being prom queen wasn’t best for her. 
+	-> Taylor 
+		Zach: Taylor. They want to be remembered, don’t they? And I think the band has some sort of feud with the School.
+	Samuel: Wow, that’s quite a claim. I don’t know if it would be a good idea to share that with anyone. I mean, look how much trouble just the confusion caused.
+	Samuel:  But, I guess, maybe the news could calm people down. Maybe the culprit could’ve known who truly won?
+	<i> Behind you, the crowd screeches indiscriminately. Some students are having a heated argument with security officers. Out in the parking lot, people throw objects at random. </i>
+
+	<i> The choice is yours. </i>
+	-> Do not share your thoughts.
+		Announcement: GOOD EVENING, STUDENTS. WE APOLOGIZE FOR THE INCONVINIENCE THIS MORNING. AFTER SOME DELIBERATION, WE ARE PROUD TO ANNOUNCE THE IDENTITY OF YOUR PROM QUEEN: ANYA FERGUSON. 
+
+		Samuel:  I guess things can go back to normal now? I like that. And I hope you had your fun with your detective work. 
+		<i> Later that night... </i>	
+		???: Hi, [Player]. Brent’s been telling me about how you spent the day asking around about the Prom Queen fiasco. 
+		???: I’ve heard about it from around the school, too.  I figured you should know. I sabotaged the votes. 
+		???: I know I should’ve gone about it another way. It’ll be hard to tell the others, and I don’t know if I’ll ever be able to. 
+		???: But thank you for not going out and making too big of a show of it. Thank you. 
+		Samantha: -Samantha
+		Samuel: You alright? Who’s messaging you?
+		Zach: No one. C’mon, Samuel. It’s our prom night, afterall. Let's celebrate. Why don’t we join in? Together?
+
+
+	-> Accuse someone. 
+		-> Samantha
+			<<SetVar GameManager "Accused" 1>>
+		-> Mr. Levi
+			<<SetVar GameManager "Accused" 2>>
+		-> Marissa
+			<<SetVar GameManager "Accused" 3>>
+		-> Brent
+			<<SetVar GameManager "Accused" 4>>
+		-> Taylor
+			<<SetVar GameManager "Accused" 5>>
+		-> Samuel
+			<<SetVar GameManager "Accused" 6>>
+
+	<<jump DecisionTree>>
+===
+
+title: DecisionTree
+tags:
+---
+<<set $Check = GetVar("Accused")>>
+<<if $Check == 6>>
+	<<jump Samuel>>
+<<else>>
+	<<jump Generic>>
+<<endif>>
+===
+
+title: Samuel
+---
+<i> You leave a report at the Office. You spend your night at the prom. </i>
+ 
+Samuel: Is everything alright? 
+
+Zach: Yeah, it’s fine! Prom night! Best time in our lives!
+
+<i> Tomorrow... </i>
+
+Samuel: WHAT. THE. FUCK. Zach, WHAT DID YOU DO? I’M SUSPENDED. WE’RE FRIENDS, AREN’T WE, ZACH?
+
+Zach: I–
+
+Samuel: You were playing detective, and you got me suspended. Fuck you. 
+
+Zach: Samuel, wait!
+
+Samuel:
+No, Zach, I’m leaving. 
+
+Announcement: GOOD EVENING, STUDENTS. WE APOLOGIZE FOR THE INCONVINIENCE THIS MORNING. AFTER SOME DELIBERATION, WE ARE PROUD TO ANNOUNCE THE IDENTITY OF YOUR PROM QUEEN: ANYA FERGUSON. 
+
+<i> Later that night, you receive a message on your phone. </i>
+
+Message: Dear [Player], we have received your tip about student Samuel Morrison, and given our current situation, we have ample reason to suspect validity behind your claims. Thank you for using the student tip hotline.
+
+===
+title: Generic
+---
+<i> You leave a report at the Office. You spend your night at the prom. </i>
+Samuel: Is everything alright? 
+
+Zach: Yeah, it’s fine! Prom night! Best time in our lives!
+
+<<if $Check == 1>>
+Samuel: You know, I haven’t seen Samantha tonight. Have you heard anything from them?
+<<elseif $Check == 2>>
+Samuel: You know, I haven’t seen Mr. Levi tonight. Have you heard anything from them?
+<<elseif $Check == 3>>
+Samuel: You know, I haven’t seen Marissa tonight. Have you heard anything from them?
+<<elseif $Check == 4>>
+Samuel: You know, I haven’t seen Brent tonight. Have you heard anything from them?
+<<elseif $Check == 5>>
+Samuel: You know, I haven’t seen taylor tonight. Have you heard anything from them?
+<<endif>>
+
+Zach: …
+
+Announcement: GOOD EVENING, STUDENTS. WE APOLOGIZE FOR THE INCONVINIENCE THIS MORNING. AFTER SOME DELIBERATION, WE ARE PROUD TO ANNOUNCE THE IDENTITY OF YOUR PROM QUEEN: ANYA FERGUSON. 
+
+Samuel: Zach, you didn’t say anything, did you? 
+
+Zach: Samuel, I solved the case. 
+
+===

@@ -1,0 +1,51 @@
+﻿title: Start
+tags:
+---
+Samantha: Yes, thank you! Haha. 
+<<SceneChange GameManager "Scene5SamFlashback">>
+===
+
+title: SamFlashback
+tags:
+---
+???: You don’t understand. I… I don’t want this. 
+
+???: I’m going to try to stop it.
+
+???: I know what people think, but this is just such a big event.
+
+???: It’s not what I want to be remembered by.
+
+???: You know how people act at big parties and things like those. 
+
+???: I don’t want to feel like that’s what I have to do. 
+
+???: I remembered something the other night, something I’d been taught. 
+
+???: I know it seems wrong, especially with all the people who know me, but
+
+???: I think I have to do it. 
+
+???: Are you sure about this? This is supposed to be one of the best nights of your life!
+
+???: Are you really content just sitting back, then and there?
+
+???: I know no matter what, they’ll stand by my side.
+
+???: I’m sorry you had to hear  this.
+
+???: I don’t know what I’m going to do.
+
+???: But I know what I’m going to do.
+
+???: Something I learned. One of the most interesting things I ever did in this school. 
+<<SceneChange GameManager "Scene5Main2">>
+===
+
+title: Sam2
+tags:
+---
+<i> What… who… that was the hardest one yet… Samantha? Was that you? </i>
+<<SceneChange GameManager "Scene6">>
+===
+
