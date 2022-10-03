@@ -49,6 +49,6 @@ title: Sam2
 tags:
 ---
 <i> What… who… that was the hardest one yet… Samantha? Was that you? </i>
-<<ChangeScene GameManager "Scene6">>
+<<ChangeScene GameManager "Scene6Main">>
 ===
 
