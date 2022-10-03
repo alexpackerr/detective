@@ -429,6 +429,10 @@ PrefabInstance:
       propertyPath: startNode
       value: Start
       objectReference: {fileID: 0}
+    - target: {fileID: 3209408905504018775, guid: 7646f18c2c82f104892890d8b3f77936, type: 3}
+      propertyPath: yarnProject
+      value: 
+      objectReference: {fileID: 7545569452688597077, guid: 2c1b3aa4c5785974581622214b52194c, type: 3}
     - target: {fileID: 3209408905754559136, guid: 7646f18c2c82f104892890d8b3f77936, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
