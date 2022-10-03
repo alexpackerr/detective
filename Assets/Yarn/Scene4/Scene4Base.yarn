@@ -61,6 +61,7 @@ tags:
 ---
 <b> RIIIIIIIIIING! </b>
 <i> That's the bell, I'd better head to class </i>
+<<ChangeScene GameManager Scene5Main1>>
 ===
 
 title: Samuel
@@ -85,8 +86,7 @@ tags:
 <<endif>>
 <<StartTalk Samuel>>
 <<FadeIn Samuel>>
-Samuel: I can’t believe it. So many people have been bothering me today. Why? Just because I won the engineering challenge once? 
-Samuel: That doesn’t even have anything to do with “hacking” or anything they’re talking about? 
+Samuel: I can’t believe it. So many people have been bothering me today. Why? Just because I won the engineering challenge once? That doesn’t even have anything to do with “hacking” or anything they’re talking about? 
 <<StopTalk Samuel>>
 -> People bothering you about that kind of thing again?	
 	<<StartTalk Samuel>>
@@ -126,10 +126,9 @@ Samuel: <i> Typing... </i>
 title: Samuel3
 tags:
 ---
-You know, the faster they figure this out, the faster everyone will get off your back. 
+-> You know, the faster they figure this out, the faster everyone will get off your back. 
 Samuel: I guess you’re right…
--> I’ve gotten some ideas about this whole situation. 
--> I’m sure it’ll get cleared up soon.
+-> You know, I’ve gotten some ideas about this whole situation. I’m sure it’ll get cleared up soon.
 <<ChangeScene GameManager "Scene4Main">>
 ===
 
@@ -257,7 +256,7 @@ tags:
 ---
 
 <<FadeIn Marissa>>
-<i> I see. </i>
+-> I see. 
 <<StartTalk Marissa>>
 Marissa: What are you going on about now? Go interrogate someone else. 
 <<FadeOut Marissa>>
@@ -306,6 +305,6 @@ Taylor: Look, we’re not doing anything that could risk us getting our Spring C
 -> Interesting. 
 <<StartTalk Taylor>>
 Taylor: Keep up the work, little detective! You’ve got this. 
-<<StopTalk Taylor>>
+<<FadeOut Taylor>>
 <<jump Start>>
 ===
