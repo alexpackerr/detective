@@ -16,21 +16,34 @@ tags:
 ---
 You are currenly alone. Where do you wish to go?
 -> (the halls)
+	<<StartTalk Marissa>>
+	<<wait 1>>
+
+	<<FadeIn Marissa>>
 	<<SetVar GameManager "MarissaMet" 1>>
 	Marissa: Look, I can’t talk right now. There’s something going on at the school, and– what do you want? I’m not lost, I don’t need your help. 
+	<<StopTalk Marissa>>
 	-> Let's not fight. I think there’s something going on here at the school.
+		<<StartTalk Marissa>>
 		Marissa: What are you, some kind of detective? There’s nothing “going on” at the school, just some stupid drama over the prom. 
+		<<StopTalk Marissa>>
 		-> I’m just curious. Exciting, isn’t it?
+		<<StartTalk Marissa>>
 		Marissa: There’s nothing exciting about shoving yourself into another student’s business. Ugh, you Squamata High Schoolers are all so annoying.
+		<<StopTalk Marissa>>
 		-> Annoying enough to sabotage?
+		<<StartTalk Marissa>>
 		Marissa: I don’t even know how you dreamt that up. Look, your school’s not worth my time to “sabotage.”
 		<<SetVar GameManager "scene2" 1>>
 		<<ChangeScene GameManager "MarissaFlashback">>
 	-> Are you sure?
+		<<StartTalk Marissa>>
 		Marissa: What are you, some kind of detective?
+		<<StopTalk Marissa>>
 		-> I’m just curious. I think there's something going on at the school. Exciting, isn't it?
+		<<StartTalk Marissa>>
 		Marissa: There’s nothing exciting about shoving yourself into another student’s business. Ugh, you Squamata High Schoolers are all so annoying.
-
+		<<FadeOut Marissa>>
 -> (to class)
 	<<SetVar GameManager "LeviMet" 1>>
 	<<ChangeScene GameManager "Scene2Class">>
