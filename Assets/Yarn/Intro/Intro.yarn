@@ -15,7 +15,8 @@ title: IntroPtOne
 tags:
 ---
 <<ResetVariables GameManager>>
-Announcement: ATTENTION STUDENTS: DUE TO THE HIGHLY UNEXPECTED OUTCOME OF THIS YEAR’S PROM COURT ELECTION POLL, WE ARE UNABLE TO DETERMINE THE WINNER OF THE PROM QUEEN TITLE. PLEASE RETURN TO YOUR CLASSES, ADDITIONAL INFORMATION WILL BE AVAILABLE SHORTLY. 
+Announcement: ATTENTION STUDENTS: DUE TO THE HIGHLY UNEXPECTED OUTCOME OF THIS YEAR’S PROM COURT ELECTION POLL, WE ARE UNABLE TO DETERMINE THE WINNER OF THE PROM QUEEN TITLE. 
+Announcement: PLEASE RETURN TO YOUR CLASSES, ADDITIONAL INFORMATION WILL BE AVAILABLE SHORTLY. 
 
 Students: Have you heard–?
 Students: What?
@@ -29,7 +30,9 @@ Students: SAMANTHA!
 Samuel: Zach, we should go… who knows what could happen here. People are angry. 
 <<StopTalk Samuel>>
 -> (Stay) 
-	-> You can go, Samuel. I think I’ll poke around this mess a little. Isn’t it time something happened around here?
+	-> You can go, Samuel. I think I’ll poke around this mess a little. 
+	-> Isn’t it time something happened around here?
+	<<FadeOut Samuel>>
 	<<wait 1>>
 	<<StartTalk Brent>>
 	<<FadeIn Brent>>
@@ -70,7 +73,11 @@ tags:
 title: IntroPtTwo
 tags:
 ---
+<<StartTalk Brent>>
+<<wait 1>>
+<<FadeIn Brent>>
 Brent: Sorry, what was I saying? Oogh, I feel kinda weird. Thanks anyway, Zach. I’ll keep looking.
+<<FadeOut Brent>>
 <<ChangeScene GameManager Scene2>>
 
 ===
