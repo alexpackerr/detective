@@ -27,19 +27,26 @@ You are currenly alone. Where do you wish to go?
 		<<SetVar GameManager "scene2" 1>>
 		<<ChangeScene GameManager "MarissaFlashback">>
 	-> Are you sure?
-	NEED TO ADD (WAITING ON WRITING)
+		Marissa: What are you, some kind of detective?
+		-> I’m just curious. I think there's something going on at the school. Exciting, isn't it?
+		Marissa: There’s nothing exciting about shoving yourself into another student’s business. Ugh, you Squamata High Schoolers are all so annoying.
+
 -> (to class)
 	<<SetVar GameManager "LeviMet" 1>>
-	<<ChangeScene GameManager Scene2Class>>
+	<<ChangeScene GameManager "Scene2Class">>
 ===
+
 title: SceneTwo_class
 tags:
 ---
-Mr. Levi: I think this is the first time they’ve actually screwed up this badly. I know what you all are whispering about, back there. I’ve told them so many times before that there’s all kinds of bugs in the system, but they never listen. Maybe this time they will…
-Mr. Levi: Oh, hey CHARACTERNAME. Believe it or not, you’re actually <i>not late</i> today! Class’s pretty excited about the “prom drama,” it seems. 
-Mr. Levi: We can “chill” for a little bit. As long as you all promise, promise  to turn in the lab work by Sunday at 10 PM, we can have a relaxed class today. Promise? Ok. Good. 
+Mr. Levi: I think this is the first time they’ve actually screwed up this badly. I know what you all are whispering about, back there.
+Mr. Levi: I’ve told them so many times before that there’s all kinds of bugs in the system, but they never listen. Maybe this time they will…
+Mr. Levi: Oh, hey Zach. Believe it or not, you’re actually <i>not late</i> today! Class’s pretty excited about the “prom drama,” it seems. 
+Mr. Levi: We can “chill” for a little bit. As long as you all promise, promise  to turn in the lab work by Sunday at 10 PM, we can have a relaxed class today. 
+Mr. Levi: Promise? Ok. Good. 
 -> Mr. Levi, you seem to know what’s going on.
-	Mr. Levi: Heh, you’re right! I do. Kind of. Admin sent out an email earlier. They said they think the poll’s been tampered with. It hasn’t been that long since I was in your shoes, in high school, you know. I’m sure one of you kids would definitely have been able to “tamper with” it. Here, why don’t we…
+	Mr. Levi: Heh, you’re right! I do. Kind of. Admin sent out an email earlier. They said they think the poll’s been tampered with. 
+	Mr. Levi: It hasn’t been that long since I was in your shoes, in high school, you know. I’m sure one of you kids would definitely have been able to “tamper with” it. Here, why don’t we…
 	<<SetVar GameManager "scene2" 2>>
 	<<ChangeScene GameManager "MrLeviFlashback">>
 -> I'm not promising anything. 

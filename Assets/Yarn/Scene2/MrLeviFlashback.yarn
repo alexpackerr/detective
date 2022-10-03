@@ -1,9 +1,11 @@
 ﻿title: Start
 tags:
 ---
-Mr. Levi: You see, it’s actually pretty easy to pass yourself off as an admin in the school registry. Didn’t even think to backup these files, either. I’m teaching you guys to set you straight. Be better than them, alright? 
-Mr. Levi: You’ve got a sharp mind, CHARACTERNAME. For all their flaws, it really seems like the school might be able to pass off more than just knowledge in their teachings.
+Mr. Levi: You see, it’s actually pretty easy to pass yourself off as an admin in the school registry. 
+Mr. Levi: Didn’t even think to backup these files, either. I’m teaching you guys to set you straight. Be better than them, alright? 
+Mr. Levi: You’ve got a sharp mind, Zach. For all their flaws, it really seems like the school might be able to pass off more than just knowledge in their teachings.
 Mr. Levi: I don’t know myself who took down the Prom Queen, and it might not matter. Probably won’t. But finding that person… would be a good test.
-Mr. Levi: Stay curious, alright? And be good. For now, it seems you only have… 10 seconds or so? But with more time, more training, who knows what you might be able to create? Just for god’s sake, find a job with a higher salary. 
+Mr. Levi: Stay curious, alright? And be good. For now, it seems you only have… 10 seconds or so? But with more time, more training, who knows what you might be able to create? 
+Mr. Levi: Just for god’s sake, find a job with a higher salary. 
 <<ChangeScene GameManager "Scene2">>
 ===
