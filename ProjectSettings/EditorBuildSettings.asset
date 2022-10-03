@@ -18,6 +18,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro/BrentFlashback_1.unity
     guid: 14aa6ad41b7be0747b83ebf9a7acf503
   - enabled: 1
+    path: Assets/Scenes/Scene4/Scene4BrentFlashback.unity
+    guid: def6aa3fd9fd899408fe3eba2f58c5b2
+  - enabled: 1
+    path: Assets/Scenes/Scene4/Scene4MarissaFlashback.unity
+    guid: 97ba8ebe18ba8de4fb88db57ee816495
+  - enabled: 1
+    path: Assets/Scenes/Scene4/Scene4Samuel.unity
+    guid: 2da31ccf6dc8b2f49addf2de75fbfe57
+  - enabled: 1
     path: Assets/Scenes/Intro/SamuelFlashback_1.unity
     guid: 3144ea1a32552824fade4205c7701d89
   - enabled: 1
@@ -30,13 +39,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene2/Scene2.unity
     guid: c0796e90d4fb8e84dbc5504ca13d1080
   - enabled: 1
-    path: Assets/Scenes/Scene4/Scene4main.unity
+    path: Assets/Scenes/Scene4/Scene4Main.unity
     guid: 0ac7f4eeb03206c47936247801a10403
   - enabled: 1
     path: Assets/Scenes/Scene2/MarisaFlashback.unity
     guid: 43fcb7ef482ec014b93d33b5539fc633
   - enabled: 1
-    path: Assets/Scenes/Scene4/Scene4Samuel.unity
+    path: Assets/Scenes/Scene4/Scene4SamuelFlashback.unity
     guid: 8668feee95f29b844bbac7b920848117
   - enabled: 1
     path: Assets/Scenes/Scene2/MrLeviFlashback.unity
