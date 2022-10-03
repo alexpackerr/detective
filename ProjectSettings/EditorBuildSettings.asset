@@ -42,7 +42,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene4/Scene4Main.unity
     guid: 0ac7f4eeb03206c47936247801a10403
   - enabled: 1
-    path: Assets/Scenes/Scene2/MarisaFlashback.unity
+    path: Assets/Scenes/Scene2/MarissaFlashback.unity
     guid: 43fcb7ef482ec014b93d33b5539fc633
   - enabled: 1
     path: Assets/Scenes/Scene4/Scene4SamuelFlashback.unity

@@ -17,15 +17,15 @@ tags:
 You are currenly alone. Where do you wish to go?
 -> (the halls)
 	<<SetVar GameManager "MarissaMet" 1>>
-	Marisa: Look, I can’t talk right now. There’s something going on at the school, and– what do you want? I’m not lost, I don’t need your help. 
+	Marissa: Look, I can’t talk right now. There’s something going on at the school, and– what do you want? I’m not lost, I don’t need your help. 
 	-> Let's not fight. I think there’s something going on here at the school.
-		Marisa: What are you, some kind of detective? There’s nothing “going on” at the school, just some stupid drama over the prom. 
+		Marissa: What are you, some kind of detective? There’s nothing “going on” at the school, just some stupid drama over the prom. 
 		-> I’m just curious. Exciting, isn’t it?
-		Marisa: There’s nothing exciting about shoving yourself into another student’s business. Ugh, you Squamata High Schoolers are all so annoying.
+		Marissa: There’s nothing exciting about shoving yourself into another student’s business. Ugh, you Squamata High Schoolers are all so annoying.
 		-> Annoying enough to sabotage?
-		Marisa: I don’t even know how you dreamt that up. Look, your school’s not worth my time to “sabotage.”
+		Marissa: I don’t even know how you dreamt that up. Look, your school’s not worth my time to “sabotage.”
 		<<SetVar GameManager "scene2" 1>>
-		<<ChangeScene GameManager "MarisaFlashback">>
+		<<ChangeScene GameManager "MarissaFlashback">>
 	-> Are you sure?
 	NEED TO ADD (WAITING ON WRITING)
 -> (to class)
@@ -49,7 +49,7 @@ Mr. Levi: We can “chill” for a little bit. As long as you all promise, promi
 title: SceneTwo_2
 tags:
 ---
-Marisa: …I think I’m going home. 
+Marissa: …I think I’m going home. 
 
 ===
 
