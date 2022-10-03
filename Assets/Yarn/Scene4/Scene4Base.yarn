@@ -210,7 +210,7 @@ tags:
 <<else>>
 	Marissa: Um, who are you? 
 	<<StopTalk Marissa>>
-	-> Meeting new people, like yourself. I happen to be pretty curious about the incident and you seem like the kind of person who might have caught something more.
+	Meeting new people, like yourself. I happen to be pretty curious about the incident and you seem like the kind of person who might have caught something more.
 <<endif>>
 <<StartTalk Marissa>>
 Marissa: What, just because I’m new? Get out of here.. I’m not even going to your prom. I couldn’t care less about what happens there. 
@@ -255,10 +255,10 @@ tags:
 ---
 
 <<FadeIn Marissa>>
--> I see. 
+<i> I see. </i>
 <<StartTalk Marissa>>
 Marissa: What are you going on about now? Go interrogate someone else. 
-<<StopTalk Marissa>>
+<<FadeOut Marissa>>
 <<jump Start>>
 
 ===
