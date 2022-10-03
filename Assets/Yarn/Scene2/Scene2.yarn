@@ -39,10 +39,11 @@ You are currenly alone. Where do you wish to go?
 		<<StartTalk Marissa>>
 		Marissa: What are you, some kind of detective?
 		<<StopTalk Marissa>>
-		-> I’m just curious. I think there's something going on at the school. Exciting, isn't it?
+		-> I think there's something going on at the school. Exciting, isn't it?
 		<<StartTalk Marissa>>
 		Marissa: There’s nothing exciting about shoving yourself into another student’s business. Ugh, you Squamata High Schoolers are all so annoying.
 		<<FadeOut Marissa>>
+		<<ChangeScene GameManager "Scene3">>
 -> (to class)
 	<<SetVar GameManager "LeviMet" 1>>
 	<<ChangeScene GameManager "Scene2Class">>

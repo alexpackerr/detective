@@ -443,7 +443,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cd3a1372b69dce046a6cd140a04d41a0, type: 3}
-  m_Color: {r: 0.60784316, g: 0.60784316, b: 0.60784316, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -527,6 +527,10 @@ PrefabInstance:
       propertyPath: startNode
       value: SceneTwo_class
       objectReference: {fileID: 0}
+    - target: {fileID: 3209408905504018775, guid: 7646f18c2c82f104892890d8b3f77936, type: 3}
+      propertyPath: yarnProject
+      value: 
+      objectReference: {fileID: 7545569452688597077, guid: 2c1b3aa4c5785974581622214b52194c, type: 3}
     - target: {fileID: 3209408905754559136, guid: 7646f18c2c82f104892890d8b3f77936, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
