@@ -83,5 +83,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
 
+    [YarnCommand("ResetVariables")]
+    public void resetVariables()
+    {
+        VarStorage = new Dictionary<string, int>();
+    }
+
 }
 

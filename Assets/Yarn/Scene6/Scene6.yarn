@@ -37,6 +37,7 @@ Samuel: Hey Zach, I’m doing better now. How’d your exploration go? I know yo
 		???: But thank you for not going out and making too big of a show of it. Thank you. 
 		Samantha: -Samantha
 		<<FadeOut Phone>>
+		<<StartTalk Samuel>>
 		<<FadeIn Samuel>>
 		Samuel: You alright? Who’s messaging you?
 		-> No one. C’mon, Samuel. It’s our prom night, afterall. Let's celebrate. Why don’t we join in. Together?
